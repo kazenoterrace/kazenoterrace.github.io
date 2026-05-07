@@ -1,9 +1,3 @@
----
-layout: default
-title: "福祉・介護職員等処遇改善加算"
-description: "福祉・介護職員等処遇改善加算の制度目的・申請書類など。令和8年度（2026年）改定対応版。"
-permalink: /shogu-kaizen-kasan/
----
 
 # 福祉・介護職員等処遇改善加算【解説】
 
