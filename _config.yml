@@ -1,2 +1,30 @@
-theme: minima
-title: 障害福祉サービス支援　風のテラス行政書士事務所
+title: "風のテラス行政書士事務所"
+description: "障害福祉サービスの新規指定申請・変更届・加算算定を専門にサポート。愛知・岐阜・三重対応。"
+url: "https://kazenoterrace.com"
+baseurl: ""
+lang: "ja"
+
+# 事務所情報
+office:
+  name: "風のテラス行政書士事務所"
+  lawyer: "○○　○○"        # ← 行政書士のお名前に変更してください
+  phone: "052-750-5612"
+  email: "k-office@kazenoterrace.com"
+  area: "愛知・岐阜・三重"
+
+# Jekyll設定
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# GitHub Pagesプラグイン
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# 除外ファイル
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
