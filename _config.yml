@@ -7,7 +7,7 @@ lang: "ja"
 # 事務所情報
 office:
   name: "風のテラス行政書士事務所"
-  lawyer: "○○　○○"        # ← 行政書士のお名前に変更してください
+  lawyer: "鈴木　達也"        # ← 行政書士のお名前に変更してください
   phone: "052-750-5612"
   email: "k-office@kazenoterrace.com"
   area: "愛知・岐阜・三重"
