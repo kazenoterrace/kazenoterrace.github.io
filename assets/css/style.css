@@ -1806,3 +1806,11 @@ a:hover {
     padding-bottom: 60px;
   }
 }
+
+.logo-image {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  display: block;
+}
+
