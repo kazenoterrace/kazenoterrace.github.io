@@ -159,6 +159,13 @@ a:hover {
   white-space: nowrap;
 }
 
+.logo-image {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  display: block;
+}
+
 .logo-text {
   display: flex;
   flex-direction: column;
