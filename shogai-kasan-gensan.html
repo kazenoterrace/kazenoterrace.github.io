@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>令和8年度版｜障害福祉サービス加算・減算まとめと事業者メリット・リスク｜風のテラス行政書士事務所</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf7f2;
+    --bg-section: #ffffff;
+    --ink: #1a2e1f;
+    --ink-soft: #4a5a4f;
+    --accent: #2d5a3d;
+    --accent-light: #4a7c5d;
+    --accent-bg: #eaf2ec;
+    --gold: #b08856;
+    --line: #d6cdbf;
+    --highlight: #fff8e8;
+    --shadow: 0 2px 12px rgba(45, 90, 61, 0.08);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: "Zen Kaku Gothic New", "Hiragino Sans", "Meiryo", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.85;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+  /* ===== Header ===== */
+  .hero {
+    background: linear-gradient(135deg, #1a3d28 0%, #2d5a3d 100%);
+    color: #faf7f2;
+    padding: 80px 0 100px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(176, 136, 86, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .hero-inner { position: relative; z-index: 1; }
+  .hero-label {
+    font-family: "Noto Serif JP", serif;
+    font-size: 13px;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  .hero h1 {
+    font-family: "Noto Serif JP", serif;
+    font-size: clamp(28px, 4.5vw, 44px);
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+  .hero h1 .accent { color: var(--gold); }
+  .hero p {
+    font-size: 16px;
+    max-width: 700px;
+    opacity: 0.92;
+  }
+  .hero-meta {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    font-size: 13px;
+    opacity: 0.7;
+    letter-spacing: 0.1em;
+  }
+
+  /* ===== Intro Notice ===== */
+  .notice {
+    background: var(--bg-section);
+    margin-top: -50px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 32px 40px;
+    border-left: 4px solid var(--gold);
+    position: relative;
+    z-index: 2;
+  }
+  .notice h2 {
+    font-family: "Noto Serif JP", serif;
+    font-size: 18px;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+  .notice p { font-size: 15px; color: var(--ink-soft); }
+  .notice ul { margin-top: 12px; padding-left: 20px; font-size: 14px; color: var(--ink-soft); }
+  .notice ul li { margin-bottom: 4px; }
+
+  /* ===== Index ===== */
+  .index-section { padding: 60px 0 20px; }
+  .index-section h2 {
+    font-family: "Noto Serif JP", serif;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 8px;
+    color: var(--accent);
+  }
+  .index-section .lead {
+    text-align: center;
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 40px;
+  }
+  .index-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 12px;
+  }
+  .index-item {
+    background: var(--bg-section);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 14px 18px;
+    font-size: 14px;
+    color: var(--ink);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .index-item:hover {
+    border-color: var(--accent);
+    background: var(--accent-bg);
+    transform: translateY(-2px);
+  }
+  .index-item .num {
+    font-family: "Noto Serif JP", serif;
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  /* ===== Service Section ===== */
+  .service-block {
+    background: var(--bg-section);
+    margin: 32px 0;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  .service-header {
+    background: linear-gradient(to right, var(--accent) 0%, var(--accent-light) 100%);
+    color: #fff;
+    padding: 24px 36px;
+    position: relative;
+  }
+  .service-header .label {
+    font-family: "Noto Serif JP", serif;
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    color: rgba(255, 248, 232, 0.8);
+    margin-bottom: 6px;
+  }
+  .service-header h2 {
+    font-family: "Noto Serif JP", serif;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .service-body { padding: 32px 36px; }
+
+  /* Service Summary */
+  .summary-box {
+    background: var(--accent-bg);
+    padding: 18px 22px;
+    border-radius: 6px;
+    margin-bottom: 28px;
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.8;
+  }
+  .summary-box strong { color: var(--accent); }
+
+  /* Kasan Table */
+  .kasan-table {
+    margin-bottom: 8px;
+  }
+  .kasan-item {
+    border-bottom: 1px solid var(--line);
+    padding: 20px 0;
+  }
+  .kasan-item:last-child { border-bottom: none; }
+  .kasan-name {
+    font-family: "Noto Serif JP", serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .kasan-name .badge {
+    background: var(--gold);
+    color: #fff;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+  .kasan-name .badge.new { background: #c14b3e; }
+  .kasan-name .badge.r8 { background: #2d5a3d; }
+  .kasan-desc {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 10px;
+  }
+  .kasan-merit {
+    background: var(--highlight);
+    border-left: 3px solid var(--gold);
+    padding: 12px 16px;
+    font-size: 13.5px;
+    border-radius: 0 4px 4px 0;
+  }
+  .kasan-merit .merit-label {
+    font-weight: 600;
+    color: var(--gold);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    margin-bottom: 4px;
+    display: block;
+  }
+  .kasan-merit p { color: var(--ink); line-height: 1.75; }
+
+  /* Gensan (Deduction) Section */
+  .gensan-divider {
+    text-align: center;
+    margin: 100px 0 40px;
+    position: relative;
+  }
+  .gensan-divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--line);
+    z-index: 0;
+  }
+  .gensan-divider span {
+    background: var(--bg);
+    padding: 0 32px;
+    position: relative;
+    z-index: 1;
+    font-family: "Noto Serif JP", serif;
+    font-size: 14px;
+    letter-spacing: 0.3em;
+    color: #a04035;
+  }
+  .gensan-intro {
+    background: #fff5f3;
+    border: 1px solid #e8c5bf;
+    border-left: 4px solid #a04035;
+    padding: 28px 32px;
+    border-radius: 6px;
+    margin-bottom: 32px;
+  }
+  .gensan-intro h2 {
+    font-family: "Noto Serif JP", serif;
+    font-size: 22px;
+    color: #a04035;
+    margin-bottom: 12px;
+  }
+  .gensan-intro p {
+    font-size: 15px;
+    color: var(--ink-soft);
+    line-height: 1.85;
+  }
+  .gensan-block {
+    background: var(--bg-section);
+    margin: 24px 0;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    border-top: 4px solid #a04035;
+  }
+  .gensan-header {
+    padding: 22px 32px 14px;
+    border-bottom: 1px solid var(--line);
+    background: linear-gradient(to right, #fff5f3 0%, #ffffff 100%);
+  }
+  .gensan-header .impact-badge {
+    display: inline-block;
+    background: #a04035;
+    color: #fff;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 3px;
+    letter-spacing: 0.08em;
+    margin-right: 10px;
+    font-weight: 500;
+  }
+  .gensan-header .impact-badge.critical { background: #7a2820; }
+  .gensan-header .impact-badge.new { background: #c14b3e; }
+  .gensan-header h3 {
+    font-family: "Noto Serif JP", serif;
+    font-size: 20px;
+    color: #7a2820;
+    margin-top: 8px;
+    font-weight: 600;
+  }
+  .gensan-body { padding: 24px 32px; }
+  .gensan-rate {
+    background: #faf7f2;
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    line-height: 1.85;
+  }
+  .gensan-rate .label {
+    display: inline-block;
+    font-family: "Noto Serif JP", serif;
+    font-size: 12px;
+    color: #a04035;
+    letter-spacing: 0.1em;
+    margin-right: 8px;
+    font-weight: 600;
+  }
+  .gensan-rate strong { color: #7a2820; font-size: 16px; }
+  .gensan-desc {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 16px;
+    line-height: 1.85;
+  }
+  .gensan-impact {
+    background: #fff8e8;
+    border-left: 3px solid var(--gold);
+    padding: 14px 18px;
+    font-size: 13.5px;
+    border-radius: 0 4px 4px 0;
+  }
+  .gensan-impact .impact-label {
+    display: block;
+    font-weight: 600;
+    color: var(--gold);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    margin-bottom: 6px;
+  }
+  .gensan-impact p { color: var(--ink); line-height: 1.75; }
+  .gensan-target {
+    font-size: 12px;
+    color: var(--ink-soft);
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px dashed var(--line);
+  }
+  .gensan-target strong { color: var(--accent); }
+
+  /* Summary Table */
+  .summary-table-wrap {
+    overflow-x: auto;
+    margin: 24px 0;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+  }
+  .summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-section);
+    font-size: 13px;
+    min-width: 600px;
+  }
+  .summary-table th {
+    background: #7a2820;
+    color: #fff;
+    padding: 12px 14px;
+    text-align: left;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+  }
+  .summary-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink);
+  }
+  .summary-table tr:last-child td { border-bottom: none; }
+  .summary-table tr:nth-child(even) td { background: #faf7f2; }
+  .summary-table .rate-cell { color: #a04035; font-weight: 600; }
+
+  /* CTA Section */
+  .cta {
+    background: var(--accent);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    margin-top: 80px;
+  }
+  .cta h2 {
+    font-family: "Noto Serif JP", serif;
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  .cta p { max-width: 600px; margin: 0 auto 28px; opacity: 0.92; }
+  .cta-btn {
+    display: inline-block;
+    background: var(--gold);
+    color: #fff;
+    padding: 14px 40px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    transition: all 0.2s ease;
+  }
+  .cta-btn:hover {
+    background: #c89866;
+    transform: translateY(-2px);
+  }
+  .cta-btn-outline {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.5);
+    color: #fff;
+  }
+  .cta-btn-outline:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: #fff;
+  }
+  .cta-btn-group {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  .cta-meta {
+    margin-top: 24px !important;
+    font-size: 13px !important;
+    opacity: 0.85;
+    max-width: none !important;
+  }
+  .footer-address {
+    margin-top: 6px;
+    font-size: 12px;
+    opacity: 0.85;
+  }
+  .footer-disclaimer {
+    margin-top: 10px;
+    font-size: 11px;
+    opacity: 0.6;
+  }
+
+  /* Footer */
+  footer {
+    background: #1a2e1f;
+    color: rgba(250, 247, 242, 0.7);
+    padding: 32px 0;
+    text-align: center;
+    font-size: 13px;
+  }
+  footer a { color: var(--gold); text-decoration: none; }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .hero { padding: 60px 0 80px; }
+    .notice { padding: 24px 20px; margin: -40px 12px 0; border-radius: 6px; }
+    .service-header { padding: 20px 24px; }
+    .service-header h2 { font-size: 20px; }
+    .service-body { padding: 24px 20px; }
+    .container { padding: 0 16px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== Hero ===== -->
+<header class="hero">
+  <div class="container hero-inner">
+    <div class="hero-label">REIWA 8 / 2026 — SHOGAI FUKUSHI</div>
+    <h1>令和8年度時点で適用できる<br><span class="accent">障害福祉サービスの加算・減算</span>と<br>事業者にとってのメリット・リスク</h1>
+    <p>令和6年度本改定の内容を基本としつつ、令和8年度の臨時改定（処遇改善加算の拡充・就労移行支援体制加算の見直し等）を反映した、9つの対象サービスごとの加算と事業者メリット、さらに経営インパクトの大きい主要減算をまとめてご紹介します。</p>
+    <div class="hero-meta">執筆：風のテラス行政書士事務所　／　最終更新：令和8年5月</div>
+  </div>
+</header>
+
+<!-- ===== 注意事項 ===== -->
+<div class="container">
+  <div class="notice">
+    <h2>はじめに ― 本記事をお読みいただく前に</h2>
+    <p>令和8年度は、本来の3年に一度の本改定の中間年にあたりますが、国の総合経済対策を踏まえ、以下4点を中心とする<strong>「期中改定（臨時応急的な見直し）」</strong>が実施されています。</p>
+    <ul>
+      <li>① 就労移行支援体制加算の見直し（令和8年4月施行）</li>
+      <li>② 就労継続支援B型の基本報酬区分の基準見直し（令和8年6月施行）</li>
+      <li>③ 新規事業所に対する応急的な報酬単価の特例（令和8年6月施行）</li>
+      <li>④ 処遇改善加算の拡充・対象拡大（令和8年6月施行）</li>
+    </ul>
+    <p style="margin-top:12px;">本記事の単位数・要件は厚生労働省およびこども家庭庁の公表資料に基づきますが、最新の解釈・運用は所管自治体にてご確認ください。</p>
+  </div>
+</div>
+
+<!-- ===== 目次 ===== -->
+<section class="index-section">
+  <div class="container">
+    <h2>対象サービス一覧</h2>
+    <p class="lead">各サービスへジャンプできます</p>
+    <div class="index-grid">
+      <a href="#seikatsu" class="index-item"><span class="num">01</span>生活介護</a>
+      <a href="#ikou" class="index-item"><span class="num">02</span>就労移行支援</a>
+      <a href="#a-gata" class="index-item"><span class="num">03</span>就労継続支援A型</a>
+      <a href="#b-gata" class="index-item"><span class="num">04</span>就労継続支援B型</a>
+      <a href="#teichaku" class="index-item"><span class="num">05</span>就労定着支援</a>
+      <a href="#gh" class="index-item"><span class="num">06</span>共同生活援助</a>
+      <a href="#jihatsu" class="index-item"><span class="num">07</span>児童発達支援</a>
+      <a href="#houdei" class="index-item"><span class="num">08</span>放課後等デイサービス</a>
+      <a href="#houmon" class="index-item"><span class="num">09</span>保育所等訪問支援</a>
+      <a href="#gensan" class="index-item" style="border-color:#a04035;background:#fff5f3;"><span class="num" style="color:#a04035;">★</span>インパクトの大きい減算</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 1. 生活介護 ===== -->
+<div class="container">
+<section id="seikatsu" class="service-block">
+  <div class="service-header">
+    <div class="label">SERVICE 01</div>
+    <h2>生活介護</h2>
+  </div>
+  <div class="service-body">
+    <div class="summary-box">
+      令和6年度改定により、<strong>基本報酬がサービス提供時間に連動</strong>する仕組みへ転換し、重度・重複障害者支援の評価が手厚くなりました。加算も「専門人材の配置」「医療的ケア」「重度障害者支援」の充実が中心です。
+    </div>
+
+    <div class="kasan-table">
+
+      <div class="kasan-item">
+        <div class="kasan-name">福祉専門職員配置等加算<span class="badge">体制</span></div>
+        <p class="kasan-desc">社会福祉士・介護福祉士・精神保健福祉士・公認心理師等の有資格者や常勤職員を一定割合配置することで算定（Ⅰ：15単位/日、Ⅱ：10単位/日、Ⅲ：6単位/日）。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>有資格者配置による報酬上の評価が安定的に得られ、職員のキャリアアップ動機にもつながります。利用者へのサービスの質を「専門性」で訴求でき、選ばれる事業所づくりに直結します。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">人員配置体制加算<span class="badge">体制</span></div>
+        <p class="kasan-desc">基準（1.7：1）よりも手厚い人員配置（1.5：1〜2.0：1）を行う場合に、定員規模に応じて33〜321単位/日。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>手厚い職員配置によるサービスの質の高さがそのまま報酬に反映され、重度利用者の受入れ拡大時の人件費コストを補填できます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">常勤看護職員等配置加算<span class="badge">体制</span></div>
+        <p class="kasan-desc">看護職員を常勤換算で1名以上配置（Ⅰ）、2名以上（Ⅱ）、3名以上（Ⅲ）。令和6年度に区分・単価が見直されました。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>医療的ケア対象者の受入れにより利用者層を拡大でき、地域から選ばれる「医療と福祉の橋渡し拠点」としての差別化が可能になります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">重度障害者支援加算</div>
+        <p class="kasan-desc">区分6かつ行動関連項目10点以上の利用者に対し、基礎研修修了者を生活支援員の20％以上配置して個別支援を行った場合（一）360単位/日、（一）+（二）510単位/日。開始180日以内は+500単位/日加算。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>強度行動障害のある利用者の受入れに対する高単価評価により、難易度の高い支援に取り組む事業所が経済的に持続可能となります。新規受入れ初期180日間の上乗せにより、移行期の負担が大幅に軽減されます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">高次脳機能障害者支援体制加算<span class="badge new">R6新設</span></div>
+        <p class="kasan-desc">高次脳機能障害支援者養成研修修了者を50：1以上配置し、利用者全体の30％以上が高次脳機能障害者で、その情報を公表している場合に算定。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>これまで評価対象が限定的だった高次脳機能障害者支援が独立加算化され、専門特化型事業所としてのブランディングが可能になりました。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">医療連携体制加算</div>
+        <p class="kasan-desc">看護職員の派遣や医療的ケアの実施について、配置の人数・時間や対象者の状態に応じて評価。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>外部医療機関との連携実績を経済的価値に変換でき、重度利用者にも対応可能な事業所として選好度が高まります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">送迎加算</div>
+        <p class="kasan-desc">利用者の自宅と事業所間の送迎を実施した場合。重度障害者比率に応じて単価が上乗せ。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>通所の難しい利用者を取り込むことで稼働率が向上し、安定的な売上基盤の形成に寄与します。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">食事提供体制加算</div>
+        <p class="kasan-desc">低所得者等への食事提供を行った場合に算定（30単位/日）。令和6年度改定で廃止が懸念されていましたが継続が決定。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>食事提供は利用者の生活満足度と通所継続率を直結的に高める要素であり、その負担を加算で補えます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">延長支援加算<span class="badge">R6拡充</span></div>
+        <p class="kasan-desc">8時間を超える支援を行った場合に算定。令和6年度改定で要件・単価が拡充。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>家族のレスパイト需要や就労家庭支援に応える形で長時間支援を実施でき、地域での利便性の高い事業所として位置づけられます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">初期加算</div>
+        <p class="kasan-desc">利用開始から30日間に限り、30単位/日を算定。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>新規利用者の受入準備・アセスメント・環境適応支援といった初期コストを補填できます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">福祉・介護職員等処遇改善加算<span class="badge r8">R8拡充</span></div>
+        <p class="kasan-desc">令和6年6月から3加算が一本化、令和8年6月から対象が「障害福祉従事者」に拡大（事務職員・調理員・運転手等を含む）。ICT活用等の生産性向上で上乗せ加算区分が新設。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>事務職員等を含む事業所全体の賃上げが可能となり、職員定着・採用力が大きく向上します。ICT導入と組み合わせれば加算率がさらに引き上げられ、業務効率化のインセンティブが働きます。</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== 2. 就労移行支援 ===== -->
+<section id="ikou" class="service-block">
+  <div class="service-header">
+    <div class="label">SERVICE 02</div>
+    <h2>就労移行支援</h2>
+  </div>
+  <div class="service-body">
+    <div class="summary-box">
+      就労移行支援は<strong>「一般就労への移行率」</strong>が報酬体系の中核です。令和6年度改定でも比較的変化は少なかったサービスですが、令和8年度に<strong>就労移行支援体制加算の要件見直し</strong>が行われ、不適切な離転職の繰り返しへの対応が強化されました。
+    </div>
+
+    <div class="kasan-table">
+
+      <div class="kasan-item">
+        <div class="kasan-name">就労移行支援体制加算<span class="badge r8">R8見直し</span></div>
+        <p class="kasan-desc">一般就労へ移行し6ヶ月以上定着した利用者がいる場合に算定。令和8年4月から、加算算定可能な年間就職者数を事業所定員までとし、過去3年以内の算定実績者は原則対象外とする要件が追加。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>本来の趣旨に沿った真剣な就労移行支援を行う事業所が引き続き正当に評価されます。短期離転職を繰り返す事業者と差別化されることで、地域での信頼性向上にもつながります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">就労支援関係研修修了加算</div>
+        <p class="kasan-desc">職場適応援助者（ジョブコーチ）等の研修修了者を配置した場合に算定（11単位/日）。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>専門研修への職員投資が報酬上で還元され、職員の専門性育成と事業所のサービス品質向上を同時に実現できます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">移行準備支援体制加算</div>
+        <p class="kasan-desc">企業実習等の準備支援を行う体制を整備している場合に算定（Ⅰ）41単位/日、（Ⅱ）100単位/日。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>企業実習や職場開拓に必要な人的・時間的コストを加算で補填でき、地域企業との連携体制構築への動機が強まります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">福祉専門職員配置等加算<span class="badge">体制</span></div>
+        <p class="kasan-desc">社会福祉士等の有資格者・常勤職員配置に応じて算定。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>専門人材の安定確保と職員定着のインセンティブとなります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">地域連携会議実施加算<span class="badge new">R6新設</span></div>
+        <p class="kasan-desc">就労支援機関や企業との連携会議を実施した場合、（Ⅰ）500単位、（Ⅱ）250単位を月1回・年4回まで算定。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>これまで無報酬だった企業・関係機関との連絡調整業務が直接評価されるようになり、地域ネットワークづくりが経済的に持続可能になります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">支援計画会議実施加算<span class="badge new">R6新設</span></div>
+        <p class="kasan-desc">サービス管理責任者・関係機関と連携した支援計画会議の実施を評価。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>多職種・多機関連携を加算で評価する仕組みにより、ケース会議の実施が報酬上の収益にもつながります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">通勤訓練加算/訪問支援特別加算</div>
+        <p class="kasan-desc">通所訓練が困難な利用者への訪問支援（187単位/日、280単位/日）。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>通所が難しくなった利用者への支援継続が可能となり、退所による離脱を防げます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">送迎加算</div>
+        <p class="kasan-desc">事業所と利用者の自宅を送迎する場合に算定。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>通所アクセスを保証することで利用継続率が向上します。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">福祉・介護職員等処遇改善加算<span class="badge r8">R8拡充</span></div>
+        <p class="kasan-desc">就労移行支援の加算率は5.0%〜10.3%。令和8年6月から対象が事業所全体に拡大。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>就労支援員の定着強化と新規採用力の向上に直結します。</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== 3. 就労継続支援A型 ===== -->
+<section id="a-gata" class="service-block">
+  <div class="service-header">
+    <div class="label">SERVICE 03</div>
+    <h2>就労継続支援A型</h2>
+  </div>
+  <div class="service-body">
+    <div class="summary-box">
+      令和6年度改定により<strong>スコア方式の評価項目が大きく見直され</strong>、平均労働時間・生産活動収支・知識能力向上等の点数配分が再設計されました。経営改善計画未提出・指定基準不適合は減算対象となるなど、運営の健全性が一層問われます。
+    </div>
+
+    <div class="kasan-table">
+
+      <div class="kasan-item">
+        <div class="kasan-name">就労移行支援体制加算<span class="badge r8">R8見直し</span></div>
+        <p class="kasan-desc">A型から一般就労へ移行し6ヶ月以上定着した利用者がいる場合に算定。令和8年4月から定員数等の制限が追加。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>A型から一般就労への移行を真剣に取り組む事業所が高く評価され、本気で利用者の自立を支える事業所として地域に認知されます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">福祉専門職員配置等加算<span class="badge">体制</span></div>
+        <p class="kasan-desc">社会福祉士等の有資格者・常勤職員配置を評価。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>専門人材の確保が報酬で補填され、職員キャリアパスの設計が容易になります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">視覚・聴覚言語障害者支援体制加算</div>
+        <p class="kasan-desc">専門職員配置による支援体制を評価（41単位/日）。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>感覚障害のある利用者の受入れ拡大により利用者層が広がり、地域から選ばれる事業所になります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">賃金向上達成指導員配置加算</div>
+        <p class="kasan-desc">賃金向上計画達成のための指導員を配置する場合。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>利用者の最低賃金確保・賃金向上に取り組む事業所として、加算と社会的評価の両方を得られます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">施設外就労加算（廃止→評価項目に統合）</div>
+        <p class="kasan-desc">令和6年度改定で従来の加算は廃止され、スコア方式の評価項目として組み込まれました。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>施設外就労実績がスコア評価を通じて基本報酬全体に反映され、毎月の市町村報告義務がなくなったため事務負担が軽減されます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">医療連携体制加算</div>
+        <p class="kasan-desc">看護職員派遣・医療的ケアの実施に応じて算定。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>医療的配慮の必要な利用者の受入れが可能となり、対象者の幅が広がります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">送迎加算</div>
+        <p class="kasan-desc">事業所と自宅間の送迎を実施する場合に算定。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>通所継続率を高め、稼働率の安定化に貢献します。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">福祉・介護職員等処遇改善加算<span class="badge r8">R8拡充</span></div>
+        <p class="kasan-desc">令和8年6月から、対象拡大とICT活用による加算上乗せ。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>職員賃金の底上げと業務効率化の両立により、人手不足の中でも安定運営が可能になります。</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== 4. 就労継続支援B型 ===== -->
+<section id="b-gata" class="service-block">
+  <div class="service-header">
+    <div class="label">SERVICE 04</div>
+    <h2>就労継続支援B型</h2>
+  </div>
+  <div class="service-body">
+    <div class="summary-box">
+      令和6年度改定では<strong>平均工賃月額に応じた基本報酬の差別化</strong>、人員配置「6：1」報酬体系の追加、目標工賃達成加算の新設等が行われました。さらに令和8年度には<strong>基本報酬区分の下限が3,000円引き上げ</strong>られ、新規事業所には所定単位数の0.984（1.6%減）の特例適用となります。
+    </div>
+
+    <div class="kasan-table">
+
+      <div class="kasan-item">
+        <div class="kasan-name">目標工賃達成加算<span class="badge new">R6新設</span></div>
+        <p class="kasan-desc">前年度の平均工賃が目標工賃に達成した場合に算定（10単位/日）。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>工賃向上への組織的取組みが直接的に報酬で還元され、利用者・職員双方のモチベーション向上につながります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">就労移行支援体制加算<span class="badge r8">R8見直し</span></div>
+        <p class="kasan-desc">B型から一般就労へ移行し6ヶ月以上定着した者を対象に、利用定員と平均工賃月額に応じた単位数を算定。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>通所利用者全員に算定されるため、トータルで大きな加算額となります。一般就労への移行実績が事業所全体の収益に直結します。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">高工賃事業所評価<span class="badge r8">R8見直し</span></div>
+        <p class="kasan-desc">高い平均工賃を実現する事業所の基本報酬単価が高く設定。低い区分の事業所では単価が引き下げ。令和8年6月から区分（一）〜（六）の下限が3,000円引き上げ、緩和措置として新区分（A〜F）が設置。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>工賃向上に成功している事業所はより高い報酬が得られます。緩和措置により急激な収入減のリスクが抑えられます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">福祉専門職員配置等加算<span class="badge">体制</span></div>
+        <p class="kasan-desc">有資格者・常勤職員の配置に応じて算定。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>専門性ある支援体制を経済的に持続可能にします。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">ピアサポート実施加算<span class="badge new">R6新設</span></div>
+        <p class="kasan-desc">障害当事者である職員（ピアサポーター）を配置し、ピア研修を修了した者が支援を行う場合に算定（100単位/月）。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>当事者目線の支援体制を整えることが評価され、当事者雇用の促進と多様な職員構成によるサービス品質向上を両立できます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">医療連携体制加算</div>
+        <p class="kasan-desc">看護職員派遣・医療的ケアを評価。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>医療ニーズのある利用者の継続支援を可能にします。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">送迎加算</div>
+        <p class="kasan-desc">送迎実施に応じて算定。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>稼働率の安定と利用継続率向上に寄与します。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">食事提供体制加算</div>
+        <p class="kasan-desc">低所得者等への食事提供を行った場合。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>食事提供という付加価値が経済的に支えられ、利用者満足度向上に貢献します。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">福祉・介護職員等処遇改善加算<span class="badge r8">R8拡充</span></div>
+        <p class="kasan-desc">令和8年6月から対象が事業所全体に拡大、ICT活用で上乗せ加算。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>支援員に加えて事務員・運転手等も賃上げ対象となり、組織全体のモチベーション向上と人材確保に貢献します。</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== 5. 就労定着支援 ===== -->
+<section id="teichaku" class="service-block">
+  <div class="service-header">
+    <div class="label">SERVICE 05</div>
+    <h2>就労定着支援</h2>
+  </div>
+  <div class="service-body">
+    <div class="summary-box">
+      就労定着支援は<strong>一般就労した障害者の定着率</strong>が報酬体系の中心です。長期定着の評価と専門人材の配置を組み合わせることで、高い加算取得が可能です。
+    </div>
+
+    <div class="kasan-table">
+
+      <div class="kasan-item">
+        <div class="kasan-name">就労定着実績体制加算</div>
+        <p class="kasan-desc">過去6年間に支援終了した利用者のうち、雇用先で42ヶ月以上78ヶ月未満就労継続している者の割合が70%以上の場合、利用者全員に300単位/月。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>長期定着の実績が継続的な収益として還元されます。月額300単位×利用者数となるため、利用者数が多いほど大きな増収につながります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">職場適応援助者養成研修修了者配置体制加算</div>
+        <p class="kasan-desc">ジョブコーチ研修修了者を就労定着支援員として配置した場合、利用者全員に算定（120単位/月）。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>職員のジョブコーチ研修受講という投資が、配置するだけで継続的に報酬として還元される仕組みです。職員の専門性向上と収益化を両立できます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">企業連携等調整加算</div>
+        <p class="kasan-desc">企業との連絡調整・支援を実施した場合に算定。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>企業との関係構築や調整業務に要する時間が報酬上で評価され、企業開拓の動機が高まります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">支援計画会議実施加算</div>
+        <p class="kasan-desc">支援計画会議の実施を評価。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>多機関協働の取組みが報酬で評価され、職場・家族・事業所の三者連携が深まります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">福祉専門職員配置等加算<span class="badge">体制</span></div>
+        <p class="kasan-desc">有資格者・常勤職員の配置を評価。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>専門性のある定着支援員配置を経済的に支えます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">福祉・介護職員等処遇改善加算<span class="badge r8">R8拡充</span></div>
+        <p class="kasan-desc">令和6年度から就労定着支援にも処遇改善加算が新規対象に。令和8年6月から対象拡大。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>これまで対象外だったサービスで処遇改善加算が取得可能となり、職員の賃金水準を就労系他サービスと均衡させることができます。</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== 6. 共同生活援助 ===== -->
+<section id="gh" class="service-block">
+  <div class="service-header">
+    <div class="label">SERVICE 06</div>
+    <h2>共同生活援助（グループホーム）</h2>
+  </div>
+  <div class="service-body">
+    <div class="summary-box">
+      令和6年度改定で、世話人配置区分が<strong>「6：1」に一本化</strong>され、より手厚い配置は「人員配置体制加算」で評価する仕組みになりました。また<strong>「一人暮らしへの移行支援」が大幅に拡充</strong>されています。令和8年6月以降、新規指定事業所には所定単位数の0.972（2.8%減）の特例適用。
+    </div>
+
+    <div class="kasan-table">
+
+      <div class="kasan-item">
+        <div class="kasan-name">人員配置体制加算<span class="badge">体制</span></div>
+        <p class="kasan-desc">基準（6：1）を上回る配置を行う場合に算定。世話人配置5：1で大幅な単価上乗せ、4：1でさらなる上乗せ。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>手厚い配置による質の高い支援が報酬上で評価され、重度利用者の受入れによる人件費コストが補填されます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">福祉専門職員配置等加算<span class="badge">体制</span></div>
+        <p class="kasan-desc">有資格者・常勤職員の配置に応じて算定。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>専門性のある世話人体制を経済的に支えます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">夜間支援等体制加算</div>
+        <p class="kasan-desc">夜勤・宿直を行う夜間支援従事者を配置した場合、配置人数比に応じて算定。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>24時間体制の運営に伴う人件費を加算で大きくカバーでき、入居者の安全・安心を確保しながら経営の持続可能性が保たれます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">医療的ケア対応支援加算<span class="badge new">R6見直し</span></div>
+        <p class="kasan-desc">医療的ケアが必要な利用者に対する看護職員等による支援を実施し、基準以上の看護職員を配置（120単位/日）。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>医療的ケア対象者の受入れが可能となり、入居者層の拡大と地域における希少資源としての位置づけが得られます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">重度障害者支援加算</div>
+        <p class="kasan-desc">区分6で行動関連項目10点以上または医療的ケアスコア16点以上の利用者を対象に、基礎研修修了者による個別支援を実施した場合。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>強度行動障害や医療的ケア対象者を住まいとして支える事業所が手厚く評価され、社会的に必要性の高い事業所として持続可能になります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">日中支援加算（Ⅰ）（Ⅱ）<span class="badge new">R6見直し</span></div>
+        <p class="kasan-desc">（Ⅰ）65歳以上又は障害支援区分4以上の障害者、（Ⅱ）日中サービスを利用できない者に対しグループホームで支援を行った場合。介護サービス包括型は初日から算定可。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>体調不良時や高齢化等で日中サービスを利用できない時の支援が改善され、長期的に入居継続が可能になります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">自立生活支援加算<span class="badge new">R6拡充</span></div>
+        <p class="kasan-desc">グループホームから一人暮らし等を希望する利用者を支援する場合、6ヶ月間に限り加算。居住支援法人・協議会に月1回以上情報提供で+35単位/月。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>「ついの住処」ではなく利用者の自立に向けた取り組みが評価され、回転率の高い運営モデルへの転換が経済的に支えられます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">退居後ピアサポート実施加算<span class="badge new">R6新設</span></div>
+        <p class="kasan-desc">グループホームを退居して一人暮らしを開始した方への、ピアサポーターによる継続支援を評価。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>退居後も継続的に関与することで利用者との関係性が長期化し、地域の自立支援拠点としての存在感が高まります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">通勤者生活支援加算<span class="badge new">R6新設</span></div>
+        <p class="kasan-desc">一般就労している利用者への生活支援を行う場合に算定。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>就労している入居者の生活面サポートが評価され、就労×住まいの両立を支える事業所として差別化できます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">居住支援連携体制加算<span class="badge new">R6新設</span></div>
+        <p class="kasan-desc">居住支援法人や居住支援協議会と連携し、必要な情報提供等を行う場合に算定。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>住宅施策との連携が報酬で評価され、地域における住まい確保のハブとしての役割を果たしながら経済的にも持続可能となります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">福祉・介護職員等処遇改善加算<span class="badge r8">R8拡充</span></div>
+        <p class="kasan-desc">令和8年6月から対象拡大。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>世話人・夜間支援員・調理員等を含む全職員の賃上げが可能となり、人手不足の深刻なグループホーム運営の継続性を支えます。</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== 7. 児童発達支援 ===== -->
+<section id="jihatsu" class="service-block">
+  <div class="service-header">
+    <div class="label">SERVICE 07</div>
+    <h2>児童発達支援</h2>
+  </div>
+  <div class="service-body">
+    <div class="summary-box">
+      令和6年度改定で<strong>基本報酬が時間区分に連動</strong>する仕組みに変わり、「家族支援」「関係機関連携」「専門的支援」の評価が大きく拡充されました。中核拠点となる児童発達支援センターへの加算も新設されています。令和8年6月以降、新規指定事業所には所定単位数の0.988（1.2%減）の特例適用。
+    </div>
+
+    <div class="kasan-table">
+
+      <div class="kasan-item">
+        <div class="kasan-name">児童指導員等加配加算<span class="badge new">R6見直し</span></div>
+        <p class="kasan-desc">基準員数を上回る児童指導員等の配置に応じて算定。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>手厚い職員配置が報酬で評価され、利用児への質の高い支援と職員配置コストの均衡が取れます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">専門的支援体制加算<span class="badge new">R6新設</span></div>
+        <p class="kasan-desc">理学療法士・作業療法士・言語聴覚士・心理担当職員・保育士・児童指導員等を常勤換算1.0以上配置し届出。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>専門職配置が常時報酬で評価されるため、療育の質向上と専門人材の安定雇用を両立できます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">専門的支援実施加算<span class="badge new">R6新設</span></div>
+        <p class="kasan-desc">個別支援計画に基づき、専門職員が個別・小集団で専門支援を実施した場合に算定（月4回限度）。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>実際の専門支援実施回数に応じた評価により、支援の質を可視化でき、保護者からの信頼獲得に直結します。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">家族支援加算<span class="badge new">R6新設</span></div>
+        <p class="kasan-desc">居宅訪問または来所による家族への相談援助、オンライン面談等を実施した場合に算定。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>従来評価が薄かった家族支援が独立した加算となり、保護者支援の取り組みが収益に反映されます。送迎不要の来所相談で職員負担も軽減されます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">関係機関連携加算<span class="badge new">R6見直し</span></div>
+        <p class="kasan-desc">保育所・学校等関係機関や医療機関と連携し、支援内容を共有する場合に算定。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>関係機関との連絡調整が報酬で評価され、地域連携の活発な事業所として位置づけられます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">保育・教育等移行支援加算<span class="badge new">R6見直し</span></div>
+        <p class="kasan-desc">保育所・幼稚園・学校等への移行を支援した場合に算定。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>インクルーシブな環境への移行支援が評価され、地域社会への接続役としての価値が報酬で還元されます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">強度行動障害児支援加算<span class="badge new">R6新設</span></div>
+        <p class="kasan-desc">実践研修修了者を配置し、判定基準20点以上の児童に支援計画シートに基づく支援を実施した場合。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>強度行動障害のある児童の受入れに対する評価により、支援困難例にも対応できる事業所として地域から信頼されます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">個別サポート加算<span class="badge new">R6見直し</span></div>
+        <p class="kasan-desc">著しく重度な障害児や、要保護児童・要支援児童への個別支援を評価。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>個別配慮が必要な児童への支援コストが報酬で補填され、ケース対応の幅が広がります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">中核機能強化加算<span class="badge new">R6新設</span></div>
+        <p class="kasan-desc">市町村が地域の障害児支援の中核拠点と位置付ける児童発達支援センターに対し、（Ⅰ）55〜155単位/日、（Ⅱ）44〜124単位/日、（Ⅲ）22〜62単位/日。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>地域の中核機関としての役割が評価され、地域拠点化への意欲が高まります。専門人材配置と連携体制構築のコストを補填できます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">人工内耳装用児支援加算<span class="badge new">R6拡大</span></div>
+        <p class="kasan-desc">人工内耳装用児への支援を行った場合に算定（445〜603単位/日）。令和6年度から児童発達支援・放課後等デイサービスでも算定可能に。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>難聴児対応に取り組む事業所がセンター以外でも評価対象となり、選択肢の限られていた利用者への支援拡大が経済的に可能になります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">医療連携体制加算 / 延長支援加算 / 送迎加算 / 欠席時対応加算 / 食事提供加算</div>
+        <p class="kasan-desc">それぞれ運営実態に応じた算定が可能。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>運営の様々な場面でのコストが加算で補填され、利用児・保護者の利便性向上に取り組む動機が強まります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">福祉・介護職員等処遇改善加算<span class="badge r8">R8拡充</span></div>
+        <p class="kasan-desc">令和8年6月から対象拡大。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>保育士・児童指導員の確保競争が激しい中、賃金水準の引き上げで採用力が高まります。</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== 8. 放課後等デイサービス ===== -->
+<section id="houdei" class="service-block">
+  <div class="service-header">
+    <div class="label">SERVICE 08</div>
+    <h2>放課後等デイサービス</h2>
+  </div>
+  <div class="service-body">
+    <div class="summary-box">
+      児童発達支援と同様、令和6年度改定で<strong>基本報酬が時間区分連動</strong>に変わり、加算体系も多くが共通化されました。令和8年6月以降、新規指定事業所には所定単位数の0.982（1.8%減）の特例適用となります。
+    </div>
+
+    <div class="kasan-table">
+
+      <div class="kasan-item">
+        <div class="kasan-name">児童指導員等加配加算<span class="badge new">R6見直し</span></div>
+        <p class="kasan-desc">基準員数を超える児童指導員等の配置を評価。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>手厚い人員配置による質の高い支援が報酬で評価され、保護者の安心感と事業所の評判向上につながります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">専門的支援体制加算 / 専門的支援実施加算<span class="badge new">R6新設</span></div>
+        <p class="kasan-desc">児童発達支援と同様の要件で算定可能。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>OT・ST・PT等の専門職を活用した療育プログラムが報酬で評価され、専門性の高い放デイとしての差別化が可能です。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">家族支援加算<span class="badge new">R6新設</span></div>
+        <p class="kasan-desc">来所相談・訪問相談・オンライン相談等を実施した場合に算定。月4回まで。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>保護者向けの相談援助が独立加算化され、保護者対応の業務時間が報酬で評価されます。送迎不要の来所相談も対象です。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">関係機関連携加算<span class="badge new">R6見直し</span></div>
+        <p class="kasan-desc">学校・医療機関等との連携・情報共有を実施した場合。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>地域連携の取り組みが報酬で還元され、関係機関との協働意欲が高まります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">強度行動障害児支援加算<span class="badge new">R6新設</span></div>
+        <p class="kasan-desc">実践研修修了者を配置し、判定基準20点以上の児童に支援を実施した場合。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>強度行動障害児の受入れに伴う支援困難性が報酬で補填されます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">個別サポート加算<span class="badge new">R6見直し</span></div>
+        <p class="kasan-desc">重度障害児・要保護児童・要支援児童への個別支援を評価。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>特に支援が必要な児童への対応が評価され、ケースワーク的支援への動機が高まります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">保育・教育等移行支援加算<span class="badge new">R6見直し</span></div>
+        <p class="kasan-desc">学校・進路先への移行支援を行った場合。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>進路を見据えた支援の取り組みが評価され、進路実績が事業所の評判となります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">人工内耳装用児支援加算<span class="badge new">R6拡大</span></div>
+        <p class="kasan-desc">人工内耳装用児への支援を実施した場合。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>難聴児対応の取り組みが評価対象に。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">医療連携体制加算 / 看護職員加配加算</div>
+        <p class="kasan-desc">医療的ケア・看護職員配置に応じて算定。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>医療的ケア児の受入れによる利用者層拡大とコスト補填を実現します。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">送迎加算 / 延長支援加算 / 欠席時対応加算 / 食事提供加算</div>
+        <p class="kasan-desc">運営に応じて算定可能。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>運営実態に即した収入確保が可能になります。延長支援加算は学校長期休暇時の長時間支援にも対応します。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">福祉・介護職員等処遇改善加算<span class="badge r8">R8拡充</span></div>
+        <p class="kasan-desc">令和8年6月から対象拡大。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>保育士・児童指導員の処遇向上に直結し、人材定着率が向上します。</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== 9. 保育所等訪問支援 ===== -->
+<section id="houmon" class="service-block">
+  <div class="service-header">
+    <div class="label">SERVICE 09</div>
+    <h2>保育所等訪問支援</h2>
+  </div>
+  <div class="service-body">
+    <div class="summary-box">
+      令和6年度改定で<strong>訪問支援員特別加算が経験年数別の2区分</strong>に再編され、「経験のある支援員自身による支援」の評価へと厳格化されました。インクルーシブ保育・教育への重要な接続役として、加算体系も充実しています。
+    </div>
+
+    <div class="kasan-table">
+
+      <div class="kasan-item">
+        <div class="kasan-name">訪問支援員特別加算（Ⅰ）<span class="badge new">R6見直し</span></div>
+        <p class="kasan-desc">障害児支援業務10年以上（または保育所等訪問等5年以上）の職員を配置し、当該職員が訪問支援を実施した場合（850単位/日）。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>長年の経験を持つ専門人材の配置と実支援が手厚く評価され、ベテラン職員の活用と高単価収入を両立できます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">訪問支援員特別加算（Ⅱ）<span class="badge new">R6見直し</span></div>
+        <p class="kasan-desc">障害児支援業務5年以上10年未満（または保育所等訪問等3年以上）の職員を配置し当該職員が訪問支援を実施した場合（700単位/日）。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>中堅職員のキャリアパスとして明確な評価軸が設けられ、中堅層の定着と育成が促進されます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">初回加算<span class="badge new">R6新設</span></div>
+        <p class="kasan-desc">児童発達支援管理責任者が初回または初回月の訪問先との事前調整・アセスメントに同行した場合（月200単位）。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>新規訪問先との関係構築に必要な初動コストが評価されます。児発管の訪問先調整業務が報酬化されることで、受入れ体制構築への投資判断がしやすくなります。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">強度行動障害児支援加算<span class="badge new">R6新設</span></div>
+        <p class="kasan-desc">実践研修修了者を配置し判定基準20点以上の強度行動障害児に対し、支援計画シートに基づく訪問支援を実施した場合。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>支援困難な児童を訪問先（保育所・学校等）へ繋ぐ機能が評価され、行動障害児のインクルージョンを促進できます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">関係機関連携加算</div>
+        <p class="kasan-desc">訪問先施設や関係機関と連携した会議等を実施した場合（150単位/回、月1回限度）。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>訪問先との連絡調整業務が評価され、訪問先施設との協働体制構築が経済的に支えられます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">家族支援加算<span class="badge new">R6新設</span></div>
+        <p class="kasan-desc">家族への相談援助・情報提供を実施した場合に算定。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>訪問先での支援にとどまらず、家族支援の取組みも報酬で評価されます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">利用者負担上限額管理加算</div>
+        <p class="kasan-desc">複数事業所利用者の負担額上限管理を行う場合（150単位/回）。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>利用者負担管理の事務作業が報酬で補填されます。</p></div>
+      </div>
+
+      <div class="kasan-item">
+        <div class="kasan-name">福祉・介護職員等処遇改善加算<span class="badge r8">R8拡充</span></div>
+        <p class="kasan-desc">令和8年6月から対象拡大、ICT活用で上乗せ加算。</p>
+        <div class="kasan-merit"><span class="merit-label">事業者メリット</span><p>訪問支援員の処遇向上により、専門人材の確保競争で優位性を保てます。</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== 減算編 ===== -->
+<div class="gensan-divider"><span>GENSAN — 経営への影響が大きい減算</span></div>
+
+<section id="gensan">
+  <div class="gensan-intro">
+    <h2>事業者にとってインパクトの大きい減算</h2>
+    <p>加算が事業収益を「積み増す」仕組みであるのに対し、減算は事業収益を「直接削り取る」仕組みです。特に令和6年度改定では、虐待防止・身体拘束・業務継続計画・情報公表などの「コンプライアンス系」減算が新設・厳格化され、人員配置や定員管理の「運営系」減算と合わせて、事業所経営に大きな影響を与え得る仕組みとなっています。ここでは、経営インパクトが特に大きい主要な減算を整理します。</p>
+  </div>
+
+  <!-- ===== 減算サマリー表 ===== -->
+  <div class="summary-table-wrap">
+    <table class="summary-table">
+      <thead>
+        <tr>
+          <th style="width:40%;">減算の種類</th>
+          <th style="width:25%;">減算率</th>
+          <th>主な対象</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>サービス管理責任者・児童発達支援管理責任者欠如減算</td>
+          <td class="rate-cell">30〜50%</td>
+          <td>ほぼ全サービス</td>
+        </tr>
+        <tr>
+          <td>サービス提供職員欠如減算</td>
+          <td class="rate-cell">30〜50%</td>
+          <td>ほぼ全サービス</td>
+        </tr>
+        <tr>
+          <td>身体拘束廃止未実施減算（施設・居住系）</td>
+          <td class="rate-cell">10%</td>
+          <td>GH、施設入所等</td>
+        </tr>
+        <tr>
+          <td>身体拘束廃止未実施減算（訪問・通所系）</td>
+          <td class="rate-cell">1%</td>
+          <td>生活介護、就労系、児発、放デイ等</td>
+        </tr>
+        <tr>
+          <td>情報公表未報告減算</td>
+          <td class="rate-cell">10%（児童系は5%）</td>
+          <td>全サービス</td>
+        </tr>
+        <tr>
+          <td>業務継続計画未策定減算（児童系除く）</td>
+          <td class="rate-cell">1%</td>
+          <td>訪問・通所系</td>
+        </tr>
+        <tr>
+          <td>業務継続計画未策定減算（施設・居住系）</td>
+          <td class="rate-cell">3%</td>
+          <td>GH、施設入所等</td>
+        </tr>
+        <tr>
+          <td>虐待防止措置未実施減算</td>
+          <td class="rate-cell">1%</td>
+          <td>ほぼ全サービス</td>
+        </tr>
+        <tr>
+          <td>個別支援計画未作成減算</td>
+          <td class="rate-cell">30〜50%</td>
+          <td>全サービス</td>
+        </tr>
+        <tr>
+          <td>定員超過利用減算</td>
+          <td class="rate-cell">30%</td>
+          <td>全サービス</td>
+        </tr>
+        <tr>
+          <td>開所時間減算（児童系）</td>
+          <td class="rate-cell">15〜30%</td>
+          <td>児発、放デイ</td>
+        </tr>
+        <tr>
+          <td>短時間利用減算</td>
+          <td class="rate-cell">30%</td>
+          <td>就労継続支援B型等</td>
+        </tr>
+        <tr>
+          <td>支援体制構築未実施減算</td>
+          <td class="rate-cell">10%</td>
+          <td>就労定着支援</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ===== 個別解説 ===== -->
+
+  <div class="gensan-block">
+    <div class="gensan-header">
+      <span class="impact-badge critical">最重要</span>
+      <h3>① サービス管理責任者・児童発達支援管理責任者欠如減算</h3>
+    </div>
+    <div class="gensan-body">
+      <div class="gensan-rate">
+        <span class="label">減算率</span>
+        <strong>翌々月から30%減算　／　5ヶ月目以降は50%減算</strong>
+      </div>
+      <p class="gensan-desc">サービス管理責任者（サビ管）または児童発達支援管理責任者（児発管）の欠員が生じた月の翌々月から減算が始まり、欠員状態が4ヶ月を超えると減算率が50%に引き上げられます。基本報酬の半分が失われるため、事実上の赤字運営に転落する事業所も少なくありません。</p>
+      <div class="gensan-impact">
+        <span class="impact-label">経営への影響</span>
+        <p>後任の確保には人材紹介手数料だけで年収の3割（サビ管月給35万円なら約150万円）が必要となるケースも。減算開始までの猶予期間内に確実に後任を確保することが経営継続の生命線となります。「やむを得ない事由によるみなし配置」の適用や、OJT短縮制度の活用を含めた早期の自治体相談が必須です。</p>
+      </div>
+      <div class="gensan-target"><strong>対象：</strong>生活介護、就労移行支援、就労継続支援A型・B型、就労定着支援、共同生活援助、児童発達支援、放課後等デイサービス、保育所等訪問支援 ほぼ全サービス</div>
+    </div>
+  </div>
+
+  <div class="gensan-block">
+    <div class="gensan-header">
+      <span class="impact-badge critical">最重要</span>
+      <h3>② サービス提供職員欠如減算（人員欠如減算）</h3>
+    </div>
+    <div class="gensan-body">
+      <div class="gensan-rate">
+        <span class="label">減算率</span>
+        <strong>翌々月から30%減算　／　3ヶ月目以降は50%減算</strong>
+      </div>
+      <p class="gensan-desc">指定基準で定められた直接処遇職員（生活支援員、児童指導員、保育士等）の人員配置基準を満たさない状態が続いた場合に適用される減算です。サビ管・児発管欠如よりも適用までの期間が短く（3ヶ月目から50%）、放課後等デイサービスや児童発達支援では深刻なリスクとなります。</p>
+      <div class="gensan-impact">
+        <span class="impact-label">経営への影響</span>
+        <p>退職・産休育休・長期病欠等が重なると、わずか数ヶ月で報酬が半減します。常勤換算で配置基準を満たすシフト管理体制の確立、複数の常勤職員によるバックアップ体制構築が経営防衛の鍵となります。</p>
+      </div>
+      <div class="gensan-target"><strong>対象：</strong>ほぼ全サービス（サービスごとに人員基準が異なる）</div>
+    </div>
+  </div>
+
+  <div class="gensan-block">
+    <div class="gensan-header">
+      <span class="impact-badge critical">最重要</span>
+      <h3>③ 身体拘束廃止未実施減算（令和6年度大幅厳格化）</h3>
+    </div>
+    <div class="gensan-body">
+      <div class="gensan-rate">
+        <span class="label">減算率</span>
+        <strong>施設・居住系サービス：10%減算　／　訪問・通所系サービス：1%減算</strong>
+      </div>
+      <p class="gensan-desc">改定前は全サービス共通で「5単位/日」と軽微な減算でしたが、令和6年度改定により、施設・居住系では<strong>「所定単位数の10%」</strong>へと大幅に引き上げられました。要件は、①身体拘束時の記録、②身体拘束適正化検討委員会の定期開催、③身体拘束適正化指針の整備、④従業者への定期研修の実施、の4点すべての履行です。</p>
+      <div class="gensan-impact">
+        <span class="impact-label">経営への影響</span>
+        <p>特に共同生活援助（グループホーム）への影響は甚大で、基本報酬の10%が削られると年間で数百万円規模の減収となります。委員会の年複数回開催、研修の定期実施、指針の整備という4要件をひとつでも欠くと適用されるため、運営記録の整備が極めて重要です。</p>
+      </div>
+      <div class="gensan-target"><strong>対象：</strong>施設・居住系（共同生活援助・施設入所支援・療養介護等）／訪問・通所系（生活介護・就労移行・就労継続A型B型・児童発達支援・放課後等デイ・保育所等訪問支援等）</div>
+    </div>
+  </div>
+
+  <div class="gensan-block">
+    <div class="gensan-header">
+      <span class="impact-badge new">R6新設</span>
+      <h3>④ 情報公表未報告減算</h3>
+    </div>
+    <div class="gensan-body">
+      <div class="gensan-rate">
+        <span class="label">減算率</span>
+        <strong>10%減算（児童発達支援・放課後等デイサービス等の児童系は5%）</strong>
+      </div>
+      <p class="gensan-desc">障害者総合支援法第76条の3に基づく情報公表（WAM NETへの登録・更新）を行っていない場合に適用される、令和6年度新設の減算です。利用者への情報提供と財務状況の透明化を目的としています。指定更新時にも報告状況が確認されます。</p>
+      <div class="gensan-impact">
+        <span class="impact-label">経営への影響</span>
+        <p>情報公表自体は事務作業であり、本来「やれば防げる」減算ですが、見落としによる適用が後を絶ちません。基本報酬の10%カットは経営インパクトが大きいため、年度初めの公表期限と更新期限の管理を徹底することが重要です。</p>
+      </div>
+      <div class="gensan-target"><strong>対象：</strong>全サービス</div>
+    </div>
+  </div>
+
+  <div class="gensan-block">
+    <div class="gensan-header">
+      <span class="impact-badge new">R6新設</span>
+      <h3>⑤ 業務継続計画未策定減算（BCP未策定減算）</h3>
+    </div>
+    <div class="gensan-body">
+      <div class="gensan-rate">
+        <span class="label">減算率</span>
+        <strong>施設・居住系サービス：3%減算　／　訪問・通所系サービス：1%減算</strong>
+      </div>
+      <p class="gensan-desc">感染症・自然災害の発生時にサービス提供を継続するための「業務継続計画（BCP）」が未策定の場合に適用される、令和6年度新設の減算です。経過措置として「感染症の予防・蔓延防止指針」と「非常災害対策計画」が策定済みであれば令和7年3月31日まで減算は適用されませんでしたが、現在は本則適用です。</p>
+      <div class="gensan-impact">
+        <span class="impact-label">経営への影響</span>
+        <p>BCPは一度策定すれば終わりではなく、年に1度以上の見直しと従業者への研修・訓練の実施が要件となっています。「策定したが研修・訓練が未実施」という形式的不備でも減算対象となるため、運営マニュアル化と年間訓練スケジュールの組み込みが必須です。</p>
+      </div>
+      <div class="gensan-target"><strong>対象：</strong>全サービス</div>
+    </div>
+  </div>
+
+  <div class="gensan-block">
+    <div class="gensan-header">
+      <span class="impact-badge new">R6新設</span>
+      <h3>⑥ 虐待防止措置未実施減算</h3>
+    </div>
+    <div class="gensan-body">
+      <div class="gensan-rate">
+        <span class="label">減算率</span>
+        <strong>1%減算</strong>
+      </div>
+      <p class="gensan-desc">障害者虐待防止のための①委員会の定期開催、②虐待防止指針の整備、③従業者への研修実施、④担当者の配置、の4要件をすべて満たしていない場合に適用される、令和6年度新設の減算です。虐待が「発生したか」ではなく「予防措置を講じているか」が問われます。</p>
+      <div class="gensan-impact">
+        <span class="impact-label">経営への影響</span>
+        <p>令和5年度の虐待相談・通報件数は3,441件（前年比23.1%増）、判断件数は1,123件（前年比31.2%増）と過去最高を更新するなど、行政の目は厳しくなっています。1%減算という金額面のインパクト以上に、改善計画提出と継続的な改善状況報告という事務的負担、社会的信用への影響が大きい点に注意が必要です。</p>
+      </div>
+      <div class="gensan-target"><strong>対象：</strong>ほぼ全サービス</div>
+    </div>
+  </div>
+
+  <div class="gensan-block">
+    <div class="gensan-header">
+      <span class="impact-badge critical">最重要</span>
+      <h3>⑦ 個別支援計画未作成減算</h3>
+    </div>
+    <div class="gensan-body">
+      <div class="gensan-rate">
+        <span class="label">減算率</span>
+        <strong>2ヶ月目まで30%減算　／　3ヶ月目以降50%減算</strong>
+      </div>
+      <p class="gensan-desc">個別支援計画の作成プロセス（アセスメント、原案作成、担当者会議、本人・家族への説明と同意、計画交付、モニタリング）が適正に実施されていない場合に適用されます。サビ管・児発管欠如減算と相互に連動し、二重減算は適用されない代わりに、いずれか減算率の高い方が適用されます。</p>
+      <div class="gensan-impact">
+        <span class="impact-label">経営への影響</span>
+        <p>令和6年度改定からは、計画の交付先として指定特定（障害児）相談支援事業所も対象になり、本人参加の徹底等、運営基準が強化されました。<strong>「計画は作っているが、本人参加・同意プロセス・モニタリング記録に不備がある」</strong>といった指摘が運営指導で頻発しており、形式不備でも減算対象となるリスクがあります。</p>
+      </div>
+      <div class="gensan-target"><strong>対象：</strong>全サービス</div>
+    </div>
+  </div>
+
+  <div class="gensan-block">
+    <div class="gensan-header">
+      <span class="impact-badge">運営系</span>
+      <h3>⑧ 定員超過利用減算</h3>
+    </div>
+    <div class="gensan-body">
+      <div class="gensan-rate">
+        <span class="label">減算率</span>
+        <strong>30%減算（利用者全員に対して）</strong>
+      </div>
+      <p class="gensan-desc">1日の利用者数が定員の一定割合を超過した場合、または直近3ヶ月平均で定員を一定数超えた場合、利用者全員の基本報酬が30%減算されます。「人員欠如減算」と同時に該当する場合、減算率の大きい方のみが適用される取扱いです。</p>
+      <div class="gensan-impact">
+        <span class="impact-label">経営への影響</span>
+        <p>キャンセル待ち利用者の急な利用受入れや、繁忙期の柔軟対応が裏目に出るケースが典型例です。日々の利用者数管理を怠ると、好意で受け入れたことが大幅な減収となります。定員変更届出（増員）の検討も視野に入れた中長期的な経営判断が求められます。</p>
+      </div>
+      <div class="gensan-target"><strong>対象：</strong>全サービス</div>
+    </div>
+  </div>
+
+  <div class="gensan-block">
+    <div class="gensan-header">
+      <span class="impact-badge">運営系</span>
+      <h3>⑨ 開所時間減算（児童発達支援・放課後等デイサービス）</h3>
+    </div>
+    <div class="gensan-body">
+      <div class="gensan-rate">
+        <span class="label">減算率</span>
+        <strong>開所時間4時間未満：30%減算　／　4時間以上6時間未満：15%減算</strong>
+      </div>
+      <p class="gensan-desc">児童発達支援・放課後等デイサービスにおいて、平均的な営業日の開所時間が短い場合に適用される減算です。サービス提供の質の確保を目的としています。</p>
+      <div class="gensan-impact">
+        <span class="impact-label">経営への影響</span>
+        <p>「学校終了後だけの短時間営業」というモデルでは大幅な減算が発生します。長期休暇期間の運営時間設定を含め、年間を通じた開所時間設計が報酬収入を大きく左右します。令和6年度改定で基本報酬が時間区分連動となったため、開所時間管理は二重の重要性を持ちます。</p>
+      </div>
+      <div class="gensan-target"><strong>対象：</strong>児童発達支援、放課後等デイサービス</div>
+    </div>
+  </div>
+
+  <div class="gensan-block">
+    <div class="gensan-header">
+      <span class="impact-badge new">R6新設</span>
+      <h3>⑩ 短時間利用減算（就労継続支援B型）</h3>
+    </div>
+    <div class="gensan-body">
+      <div class="gensan-rate">
+        <span class="label">減算率</span>
+        <strong>30%減算</strong>
+      </div>
+      <p class="gensan-desc">就労継続支援B型において、利用者の支援時間が一定時間未満となっている場合に適用される、令和6年度新設の減算です。実態として極めて短時間の利用しかない利用者が多い事業所への対応として導入されました。</p>
+      <div class="gensan-impact">
+        <span class="impact-label">経営への影響</span>
+        <p>体調や障害特性に応じた柔軟な利用調整が、結果として収益を大きく毀損するリスクとなります。短時間利用者の支援計画見直し、利用時間の段階的な延長計画策定、適切な利用者層との出会いの場づくりなど、運営戦略全体での対応が求められます。</p>
+      </div>
+      <div class="gensan-target"><strong>対象：</strong>就労継続支援B型</div>
+    </div>
+  </div>
+
+  <div class="gensan-block">
+    <div class="gensan-header">
+      <span class="impact-badge new">R6新設</span>
+      <h3>⑪ 支援体制構築未実施減算（就労定着支援）</h3>
+    </div>
+    <div class="gensan-body">
+      <div class="gensan-rate">
+        <span class="label">減算率</span>
+        <strong>10%減算</strong>
+      </div>
+      <p class="gensan-desc">就労定着支援の終了後も引き続き支援が必要と見込まれる利用者について、雇用先企業や関係機関へ「要支援者情報」を適切に引き継ぐ措置（指針策定・責任者選任・記録作成保存）が講じられていない場合に適用される、令和6年度新設の減算です。</p>
+      <div class="gensan-impact">
+        <span class="impact-label">経営への影響</span>
+        <p>支援終了後の引き継ぎ業務という、ともすれば軽視されがちな業務が10%減算という重い形で評価されます。引継ぎ用書式の整備と運用体制の構築が必須です。</p>
+      </div>
+      <div class="gensan-target"><strong>対象：</strong>就労定着支援</div>
+    </div>
+  </div>
+
+  <div class="gensan-block">
+    <div class="gensan-header">
+      <span class="impact-badge">運営系</span>
+      <h3>⑫ 食事提供体制加算における管理栄養士配置等の要件未充足</h3>
+    </div>
+    <div class="gensan-body">
+      <div class="gensan-rate">
+        <span class="label">影響</span>
+        <strong>加算不算定（実質的減収）</strong>
+      </div>
+      <p class="gensan-desc">厳密には減算ではなく加算の不算定ですが、令和6年度改定で食事提供体制加算の要件が見直され、栄養面の配慮を行う体制（管理栄養士等の関与）が求められるようになりました。これを満たさないと加算が取れず、実質的な減収となります。</p>
+      <div class="gensan-impact">
+        <span class="impact-label">経営への影響</span>
+        <p>「これまで取れていた加算が突然取れなくなる」リスクとして、運営上は減算と同等のインパクトがあります。栄養士・管理栄養士との連携、献立記録、栄養ケア計画の整備が必要です。</p>
+      </div>
+      <div class="gensan-target"><strong>対象：</strong>食事提供体制加算を算定する各サービス</div>
+    </div>
+  </div>
+
+  <!-- ===== まとめ ===== -->
+  <div class="gensan-intro" style="margin-top:48px;">
+    <h2>減算リスクへの対策 ― 行政書士の視点から</h2>
+    <p>減算リスクの多くは、<strong>「適切な事務手続き・記録管理・委員会運営・研修実施」</strong>で防げるものです。特に令和6年度改定で新設された「虐待防止」「身体拘束」「BCP」「情報公表」の4減算は、運営指導（実地指導）の重点確認ポイントとなっており、書類整備の不備による指摘事例が急増しています。<br><br>1%の減算であっても、年間ベースで見ると数十万円〜数百万円の減収となるケースがあります。さらに複数減算が重なれば経営継続そのものが危ぶまれます。日常的な運営記録の整備と、年1回以上の自主点検が、安定経営の最大の防衛策です。</p>
+  </div>
+
+</section>
+
+</div>
+
+
+<!-- ===== CTA ===== -->
+<section class="cta">
+  <div class="container">
+    <h2>加算届出・減算対策のことならお任せください</h2>
+    <p>適切な加算届出と確実な減算リスク管理は、事業所の安定的な経営に直結します。風のテラス行政書士事務所では、新規指定申請から加算届出、変更届出、運営指導対策、各種規程・指針の整備まで、障害福祉サービス事業の運営に伴う各種手続きを総合的にサポートいたします。</p>
+    <div class="cta-btn-group">
+      <a href="index.html#contact" class="cta-btn">無料相談のお申し込み</a>
+      <a href="tel:052-750-5612" class="cta-btn cta-btn-outline">℡ 052-750-5612</a>
+    </div>
+    <p class="cta-meta">対応エリア：名古屋市・愛知県全域　／　平日 10:00〜18:00（土日祝日のご相談は要予約）</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 風のテラス行政書士事務所　／　<a href="https://kazenoterrace.com/">kazenoterrace.com</a></p>
+    <p class="footer-address">〒456-0022 愛知県名古屋市熱田区横田二丁目1-32-402　／　TEL: 052-750-5612</p>
+    <p class="footer-disclaimer">※本記事は令和8年5月時点の情報です。最新の取扱いは所管自治体・厚生労働省・こども家庭庁の公式情報をご確認ください。</p>
+  </div>
+</footer>
+
+</body>
+</html>
