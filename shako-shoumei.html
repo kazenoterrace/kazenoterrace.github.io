@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>車庫証明の取得代行｜名古屋市・愛知県 | 風のテラス行政書士事務所</title>
-<meta name="description" content="名古屋市・愛知県の車庫証明（自動車保管場所証明）の取得を行政書士が代行します。書類の準備から平日の警察署への申請・受け取りまで、まとめてお引き受けし、お客様のご負担を軽減します。書類のご自身作成＋当事務所で提出は4,400円、当事務所で作成＋提出は9,900円（税込）。名古屋市外の愛知県内は別途出張費（エリアにより2,200円〜4,400円・税込）。">
+<meta name="description" content="名古屋市・愛知県の車庫証明（自動車保管場所証明）の取得を行政書士が代行します。普通車・軽自動車のどちらにも対応。書類の準備から平日の警察署への申請・受け取りまで、まとめてお引き受けし、お客様のご負担を軽減します。普通車は、ご自身作成＋当事務所で提出が7,300円、当事務所で作成＋提出が10,600円（税込・証紙代等込み）。軽自動車の届出代行は3,850円〜。名古屋市外の愛知県内は別途出張費（エリアにより2,200円〜4,400円・税込）。">
 <link rel="canonical" href="https://kazenoterrace.com/shako-shoumei.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -168,6 +168,11 @@
   .price-notes li{list-style:none;padding-left:1.4em;position:relative;margin:.45rem 0}
   .price-notes li::before{content:"※";position:absolute;left:0;color:#A9C8E6}
   .price-notes b{color:#fff}
+  .price-cat{color:#fff;font-family:"Shippori Mincho B1",serif;font-size:1.12rem;text-align:center;
+    margin:2.4rem 0 0;letter-spacing:.02em}
+  .price-cat span{display:block;font-size:.78rem;color:#A9C8E6;font-family:"Zen Kaku Gothic New",sans-serif;
+    margin-top:.2rem;font-weight:400}
+  .price-cat + .price-grid{margin-top:1rem}
 
   /* flow */
   .steps{display:grid;gap:1rem;margin-top:1rem}
@@ -224,6 +229,42 @@
   footer .ft-links a:hover{color:#fff}
   footer .copy{border-top:1px solid #46423b;padding-top:1.4rem;color:#8f897e;font-size:.8rem;text-align:center}
 
+  /* worries (persona voices) */
+  .worries{background:var(--paper-2)}
+  .voice-list{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:.5rem}
+  .voice{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.4rem 1.5rem;
+    display:flex;gap:.9rem;align-items:flex-start}
+  .voice .qm{font-family:"Shippori Mincho B1",serif;font-size:2.2rem;color:var(--breeze);
+    opacity:.35;line-height:1;flex:none;margin-top:-.2rem}
+  .voice p{color:var(--ink-soft);font-size:.95rem}
+  .voice p b{color:var(--breeze-deep);font-weight:700}
+
+  /* vehicle types */
+  .vtype-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;margin-top:.5rem}
+  .vtype{background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:1.9rem 1.8rem;box-shadow:var(--shadow)}
+  .vtype .badge{display:inline-block;font-size:.74rem;font-weight:700;letter-spacing:.05em;
+    border-radius:999px;padding:.3rem .85rem;margin-bottom:.95rem}
+  .vtype.normal .badge{background:var(--breeze-tint);color:var(--breeze-deep)}
+  .vtype.kei .badge{background:var(--sand-soft);color:var(--clay)}
+  .vtype h3{font-size:1.16rem;margin-bottom:.55rem}
+  .vtype p{color:var(--ink-soft);font-size:.94rem;margin-bottom:.7rem}
+  .vtype p:last-child{margin-bottom:0}
+  .vtype .name{font-family:"Shippori Mincho B1",serif;color:var(--breeze-deep);font-weight:600}
+
+  /* documents */
+  .docs{background:var(--breeze-tint)}
+  .docs .panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.8rem,4vw,2.6rem);box-shadow:var(--shadow)}
+  .docs h3{color:var(--breeze-deep);font-size:1.14rem;margin:0 0 .55rem}
+  .docs .doc-block + .doc-block{margin-top:1.6rem;padding-top:1.6rem;border-top:1px solid var(--line)}
+  .docs ul{margin:.4rem 0 0;padding-left:1.3em}
+  .docs li{color:var(--ink-soft);font-size:.94rem;margin:.4rem 0}
+  .docs .dl{display:inline-flex;align-items:center;gap:.5rem;margin-top:1rem;background:var(--breeze);
+    color:#fff;font-weight:700;border-radius:999px;padding:.7rem 1.3rem;font-size:.92rem;transition:background .2s}
+  .docs .dl:hover{background:var(--breeze-deep)}
+  .docs .note{font-size:.86rem;color:var(--ink-soft);margin-top:.8rem}
+
   .center{text-align:center}
   .mt{margin-top:2.4rem}
 
@@ -239,7 +280,7 @@
     .nav-toggle{display:block}
   }
   @media(max-width:620px){
-    .g3,.g2,.price-grid,.need-list,.contact-grid{grid-template-columns:1fr}
+    .g3,.g2,.price-grid,.need-list,.contact-grid,.voice-list,.vtype-grid{grid-template-columns:1fr}
     .hero h1 .hl{white-space:normal}
     .step{grid-template-columns:1fr;gap:.6rem}
   }
@@ -287,10 +328,11 @@
       <a class="btn btn-ghost" href="#contact">メールで相談する</a>
     </div>
     <div class="price-chip">
-      <small>代行費用</small><b>4,400円</b><small>〜（税込）／ 1件あたり</small>
+      <small>代行費用</small><b>3,850円</b><small>〜（税込）／ 1件あたり</small>
     </div>
     <div class="pills">
       <span class="pill">📍 <b>名古屋市内</b>はもちろん愛知県全域に対応</span>
+      <span class="pill">🚙 <b>普通車・軽自動車</b>どちらも対応</span>
       <span class="pill">🕒 <b>平日10:00〜18:00</b>（土日祝は要予約）</span>
     </div>
   </div>
@@ -333,6 +375,21 @@
         <span class="ic">📝</span>
         <div><b>名義変更をするとき</b><span>家族や知人から車を引き継ぎ、所有者を変えるとき。</span></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORRIES ============ -->
+<section class="section worries" id="worries">
+  <div class="wrap">
+    <span class="eyebrow">Worries</span>
+    <h2>こんなお悩み、<br>ありませんか？</h2>
+    <p class="lead">車庫証明の手続きでは、次のようなお声をよくお聞きします。ひとつでも当てはまれば、どうぞお気軽にご相談ください。</p>
+    <div class="voice-list mt">
+      <div class="voice"><span class="qm">“</span><p>申請書の書き方や必要書類が<b>よく分からない</b>。何から手をつければいいのか…。</p></div>
+      <div class="voice"><span class="qm">“</span><p>仕事が忙しく、<b>平日に警察署へ行く時間が取れない</b>。代わりに手続きしてほしい。</p></div>
+      <div class="voice"><span class="qm">“</span><p>家族から車を譲り受けたが、<b>名義変更の前提となる車庫証明</b>の取り方が分からない。</p></div>
+      <div class="voice"><span class="qm">“</span><p>引っ越しで保管場所が変わった。<b>住所変更とあわせて</b>車庫証明も済ませたい。</p></div>
     </div>
   </div>
 </section>
@@ -398,31 +455,114 @@
   </div>
 </section>
 
+<!-- ============ VEHICLE TYPES ============ -->
+<section class="section" id="vtype">
+  <div class="wrap">
+    <span class="eyebrow">Vehicle</span>
+    <h2>普通車・軽自動車、<br>どちらも対応します</h2>
+    <p class="lead">普通車と軽自動車では、手続きの名称や仕組みが少し異なります。当事務所ではどちらの手続きも代行いたします。</p>
+    <div class="vtype-grid mt">
+      <div class="vtype normal">
+        <span class="badge">普通車</span>
+        <h3>自動車保管場所証明（車庫証明）</h3>
+        <p>警察署に申請し、保管場所があることを<span class="name">「証明」</span>してもらう手続きです。交付まで中2日ほどかかり、新規登録・名義変更・住所変更などの際に必要になります。</p>
+        <p>申請手数料として愛知県収入証紙 2,300円が必要ですが、当事務所の代行料金にはこの証紙代と郵送費が含まれています。</p>
+      </div>
+      <div class="vtype kei">
+        <span class="badge">軽自動車</span>
+        <h3>自動車保管場所届出</h3>
+        <p>軽自動車は「証明」ではなく、保管場所を警察署へ<span class="name">「届出」</span>する仕組みです。名古屋市など対象地域では、軽自動車を登録したあとに届出が必要です。</p>
+        <p>2025年4月の法改正で保管場所標章が廃止されたため、届出にかかる手数料はありません。対象地域かどうかなど、ご不明な点はお問い合わせください。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ PRICING ============ -->
 <section class="section pricing" id="pricing">
   <div class="wrap">
     <span class="eyebrow">Price</span>
     <h2>料金プラン</h2>
-    <p class="lead">「どこまでお手伝いするか」に応じて、2つのプランをご用意しています。お手元の状況に合わせてお選びいただけます。</p>
+    <p class="lead">「どこまでお手伝いするか」に応じて、それぞれのプランをご用意しています。普通車・軽自動車のどちらにも対応します。</p>
+
+    <h3 class="price-cat">普通車（自動車保管場所証明）<span>証紙代2,300円・郵送費を含んだ税込料金です</span></h3>
     <div class="price-grid">
       <div class="price-card">
         <span class="tag">申請書類をご自身で作成される方</span>
         <h3>ご自身で作成＋当事務所で提出</h3>
-        <div class="amt">4,400<small>円（税込）</small></div>
-        <p class="desc">お客様が作成された申請書類を、当事務所が警察署へ申請・受け取りします。</p>
+        <div class="amt">7,300<small>円（税込）</small></div>
+        <p class="desc">お客様が作成された申請書類を、当事務所が警察署へ申請・受け取りします。証紙代2,300円・郵送費を含みます。</p>
       </div>
       <div class="price-card">
         <span class="tag">書類の作成からご依頼の方</span>
         <h3>当事務所で作成＋提出</h3>
-        <div class="amt">9,900<small>円（税込）</small></div>
-        <p class="desc">申請書に加え、所在図・配置図の作成も含めて、警察署への申請・受け取りまで一括で対応します。</p>
+        <div class="amt">10,600<small>円（税込）</small></div>
+        <p class="desc">申請書に加え、所在図・配置図の作成も含めて、警察署への申請・受け取りまで一括で対応します。証紙代2,300円・郵送費を含みます。</p>
       </div>
     </div>
+
+    <h3 class="price-cat">軽自動車（保管場所届出）<span>名古屋市など対象地域での届出代行です</span></h3>
+    <div class="price-grid">
+      <div class="price-card">
+        <span class="tag">届出書類をご自身で作成される方</span>
+        <h3>ご自身で作成＋当事務所で提出</h3>
+        <div class="amt">3,850<small>円（税込）</small></div>
+        <p class="desc">お客様が作成された届出書類を、当事務所が警察署へ提出します。</p>
+      </div>
+      <div class="price-card">
+        <span class="tag">書類の作成からご依頼の方</span>
+        <h3>当事務所で作成＋提出</h3>
+        <div class="amt">6,600<small>円（税込）</small></div>
+        <p class="desc">届出書に加え、所在図・配置図の作成も含めて、警察署への提出まで一括で対応します。</p>
+      </div>
+    </div>
+
     <ul class="price-notes">
-      <li><b>ご自身で作成された書類</b>を郵送いただいた場合でも、当事務所での確認後に内容の修正を行ったときは、「当事務所で作成＋提出」の料金（9,900円・税込）を申し受ける場合があります。</li>
+      <li><b>ご自身で作成された書類</b>を郵送いただいた場合でも、当事務所での確認後に内容の修正を行ったときは、「当事務所で作成＋提出」の料金を申し受ける場合があります。</li>
       <li><b>名古屋市外の愛知県内</b>は、出張費を別途申し受けます（エリアにより 2,200円／4,400円・税込）。詳しくは下記「対応エリア」をご覧ください。</li>
-      <li>上記の代行費用とは別に、<b>申請手数料などの実費</b>（普通車は2,300円・愛知県収入証紙等）がかかります。</li>
     </ul>
+  </div>
+</section>
+
+<!-- ============ DOCUMENTS ============ -->
+<section class="section docs" id="docs">
+  <div class="wrap">
+    <span class="eyebrow">Documents</span>
+    <h2>ご用意いただくもの</h2>
+    <p class="lead">プランによってお預かりする書類が異なります。ご不明な場合は、お問い合わせいただければご案内します。</p>
+    <div class="panel mt">
+      <div class="doc-block">
+        <h3>共通してご用意いただくもの</h3>
+        <ul>
+          <li>車検証（自動車検査証）またはその写し</li>
+          <li>駐車場の賃貸借契約書の写し（駐車場をお借りの場合）</li>
+          <li>保管場所の所在地・使用の本拠の位置（ご自宅等）がわかるもの</li>
+          <li>当事務所への委任状（作成日付・住所・氏名（法人は名称）・電話番号を記入し、押印をしたもの）　<a href="ininjo.pdf" target="_blank" rel="noopener" style="color:var(--breeze-deep);font-weight:700;text-decoration:underline">委任状の様式（PDF）はこちら ↗</a></li>
+        </ul>
+      </div>
+      <div class="doc-block">
+        <h3>「ご自身で作成＋当事務所で提出」プランの場合</h3>
+        <ul>
+          <li>ご記入済みの申請書一式（自動車保管場所証明申請書 ほか）</li>
+          <li>保管場所の所在図・配置図</li>
+          <li>自認書、または保管場所使用承諾証明書（駐車場契約書の写しで代用できる場合があります）</li>
+        </ul>
+        <p class="note">※ 申請書の「日付」「警察署長 殿」「代理人（連絡先）」欄は空欄のままお送りください。</p>
+      </div>
+      <div class="doc-block">
+        <h3>「当事務所で作成＋提出」プランの場合</h3>
+        <ul>
+          <li>車検証の写しなど、申請書の作成に必要な情報</li>
+          <li>駐車場の所在地や使用承諾に関する情報（契約書の写し等）</li>
+        </ul>
+        <p class="note">申請書・所在図・配置図の作成は当事務所で行いますので、上記の情報をいただければ大丈夫です。</p>
+      </div>
+      <div class="doc-block">
+        <h3>申請書の様式をダウンロードされる方へ</h3>
+        <p style="color:var(--ink-soft);font-size:.94rem">申請書・所在図・配置図などの様式は、愛知県警察の公式ページから入手できます（A4印刷・消せるボールペンは不可です）。</p>
+        <a class="dl" href="https://www.pref.aichi.jp/police/shinsei/koutsu/shako/chusha/shinnseiyoushi.html" target="_blank" rel="noopener">愛知県警察「各種申請用紙」ページへ ↗</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -470,6 +610,10 @@
       <details>
         <summary><span><span class="q">Q.</span>準備するものは何ですか？</span></summary>
         <div class="a">車検証（またはその写し）、駐車場の契約書などをご用意ください。</div>
+      </details>
+      <details>
+        <summary><span><span class="q">Q.</span>軽自動車の車庫証明（届出）もお願いできますか？</span></summary>
+        <div class="a">はい、軽自動車の保管場所届出も代行いたします。軽自動車は「証明」ではなく「届出」となり、名古屋市など対象地域で必要です。対象地域かどうかも含めてご案内しますので、お気軽にお問い合わせください。</div>
       </details>
       <details>
         <summary><span><span class="q">Q.</span>車庫証明のステッカー（標章）はもらえますか？</span></summary>
@@ -528,6 +672,7 @@
         <a href="https://www.kazenoterrace-office.com/">事務所公式サイトへ ↗</a>
         <a href="#whatis">車庫証明とは</a>
         <a href="#pricing">料金プラン</a>
+        <a href="#docs">必要書類</a>
         <a href="#flow">ご依頼の流れ</a>
         <a href="#faq">よくあるご質問</a>
         <a href="#contact">お問い合わせ</a>
