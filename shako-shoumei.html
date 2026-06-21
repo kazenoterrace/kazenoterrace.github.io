@@ -270,6 +270,13 @@
   .docs .callout p{color:var(--ink-soft);font-size:.9rem;margin:.5rem 0 0}
   .docs .callout p.sub{font-size:.84rem;padding-left:1.2em;position:relative}
   .docs .callout p.sub::before{content:"※";position:absolute;left:0;color:var(--breeze)}
+  .docs .callout .must{font-weight:700;color:var(--breeze-deep);margin-top:.9rem;font-size:.92rem}
+  .docs .callout ol.must-list{margin:.5rem 0 0;padding-left:0;list-style:none;counter-reset:m}
+  .docs .callout ol.must-list li{counter-increment:m;position:relative;padding-left:2em;
+    color:var(--ink-soft);font-size:.9rem;margin:.45rem 0}
+  .docs .callout ol.must-list li::before{content:counter(m);position:absolute;left:0;top:.05em;
+    width:1.45em;height:1.45em;border-radius:50%;background:var(--breeze);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-size:.76rem;font-weight:700}
 
   .center{text-align:center}
   .mt{margin-top:2.4rem}
@@ -477,8 +484,8 @@
       <div class="vtype kei">
         <span class="badge">軽自動車</span>
         <h3>自動車保管場所届出</h3>
-        <p>軽自動車は「証明」ではなく、保管場所を警察署へ<span class="name">「届出」</span>する仕組みです。名古屋市など対象地域では、軽自動車を登録したあとに届出が必要です。</p>
-        <p>2025年4月の法改正で保管場所標章が廃止されたため、届出にかかる手数料はありません。対象地域かどうかなど、ご不明な点はお問い合わせください。</p>
+        <p>軽自動車は「証明」ではなく、保管場所を警察署へ<span class="name">「届出」</span>する仕組みです。名古屋市内など一部の地域で、軽自動車を登録したあとに届出が必要になります。</p>
+        <p>2025年4月の法改正で保管場所標章が廃止されたため、届出にかかる手数料はありません。<b>なお、軽自動車の届出代行は名古屋市内のみを対応エリアとさせていただきます。</b></p>
       </div>
     </div>
   </div>
@@ -507,7 +514,7 @@
       </div>
     </div>
 
-    <h3 class="price-cat">軽自動車（保管場所届出）<span>名古屋市など対象地域での届出代行です</span></h3>
+    <h3 class="price-cat">軽自動車（保管場所届出）<span>名古屋市内のみを対応エリアとする届出代行です</span></h3>
     <div class="price-grid">
       <div class="price-card">
         <span class="tag">届出書類をご自身で作成される方</span>
@@ -524,8 +531,8 @@
     </div>
 
     <ul class="price-notes">
-      <li><b>ご自身で作成された書類</b>を郵送いただいた場合でも、当事務所での確認後に内容の修正を行ったときは、「当事務所で作成＋提出」の料金を申し受ける場合があります。</li>
-      <li><b>名古屋市外の愛知県内</b>は、出張費を別途申し受けます（エリアにより 2,200円／4,400円・税込）。詳しくは下記「対応エリア」をご覧ください。</li>
+      <li><b>ご自身で作成された書類</b>を郵送いただいた場合でも、書類の記載について追記や修正が必要となるときには、当事務所で必要な修正を行い、書類を完成させることは可能です。ただし、その場合は当事務所で作成・提出する場合の料金とさせて頂きます。</li>
+      <li><b>名古屋市外の愛知県内</b>については、出張費が別途必要となりますのでご了承ください（エリアにより 2,200円／4,400円・税込）。詳しくは下記「対応エリア」をご覧ください。</li>
     </ul>
   </div>
 </section>
@@ -554,6 +561,16 @@
           <li>自認書、または保管場所使用承諾証明書（駐車場契約書の写しで代用できる場合があります）</li>
         </ul>
         <p class="note">※ 申請書の「日付」「警察署長 殿」「代理人（連絡先）」欄は空欄のままお送りください。</p>
+        <div class="callout">
+          <b>配置図について</b>
+          <p>管理会社などに使用承諾証明書を依頼すると、駐車場の図面も一緒に送付してもらえる場合があります。その場合は、不足している情報を追記したうえで、「別紙添付」と記入してお使いいただけます。保管場所は、赤で斜線を引くなどして特定してください。</p>
+          <p class="must">【必ず記載が必要な事項】</p>
+          <ol class="must-list">
+            <li>保管場所の幅・長さ</li>
+            <li>駐車場の出入口の幅</li>
+            <li>出入口に通じる前面道路の幅員</li>
+          </ol>
+        </div>
       </div>
       <div class="doc-block">
         <h3>「当事務所で作成＋提出」プランの場合</h3>
@@ -627,7 +644,7 @@
       </details>
       <details>
         <summary><span><span class="q">Q.</span>軽自動車の車庫証明（届出）もお願いできますか？</span></summary>
-        <div class="a">はい、軽自動車の保管場所届出も代行いたします。軽自動車は「証明」ではなく「届出」となり、名古屋市など対象地域で必要です。対象地域かどうかも含めてご案内しますので、お気軽にお問い合わせください。</div>
+        <div class="a">はい、軽自動車の保管場所届出も代行いたします（対応エリアは名古屋市内のみとなります）。軽自動車は「証明」ではなく「届出」となり、名古屋市内など一部の地域で必要です。詳しくはお気軽にお問い合わせください。</div>
       </details>
       <details>
         <summary><span><span class="q">Q.</span>車庫証明のステッカー（標章）はもらえますか？</span></summary>
