@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>放課後等デイサービス開業ガイド｜準備からオープンまでの完全ロードマップ</title>
+<meta name="description" content="放課後等デイサービスを新規開設したい方のための開業ガイド。法人設立、指定基準（人員・設備・運営）、指定申請の流れ、資金計画、よくあるつまずきまで、一からわかりやすく解説します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#1B5E4B;
+  --green-deep:#0F3A2E;
+  --green-pale:#E7F0EA;
+  --amber:#F0A032;
+  --amber-soft:#FDF3E1;
+  --paper:#FCFCF8;
+  --ink:#232E2A;
+  --ink-soft:#5B6A64;
+  --line:#DCE4DC;
+  --grid:rgba(27,94,75,0.055);
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{
+  font-family:'Noto Sans JP',sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size:28px 28px;
+  line-height:1.9;
+  font-size:16px;
+}
+h1,h2,h3,h4{font-family:'Zen Maru Gothic',sans-serif;line-height:1.5}
+a{color:var(--green)}
+
+/* ===== nav ===== */
+nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(252,252,248,0.94);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{max-width:1040px;margin:0 auto;padding:0 20px;display:flex;align-items:center;gap:18px;height:60px}
+.nav-logo{font-family:'Zen Maru Gothic',sans-serif;font-weight:900;color:var(--green-deep);font-size:15px;white-space:nowrap}
+.nav-logo span{color:var(--amber)}
+.nav-links{display:flex;gap:4px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{
+  font-size:13px;color:var(--ink-soft);text-decoration:none;
+  padding:6px 10px;border-radius:99px;white-space:nowrap;font-weight:500;
+}
+.nav-links a:hover,.nav-links a:focus-visible{background:var(--green-pale);color:var(--green-deep)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+
+/* ===== hero ===== */
+header{max-width:1040px;margin:0 auto;padding:72px 20px 56px}
+.eyebrow{
+  display:inline-block;font-size:13px;font-weight:700;letter-spacing:.12em;
+  color:var(--green);background:var(--green-pale);
+  padding:5px 14px;border-radius:99px;margin-bottom:20px;
+}
+h1{font-size:clamp(30px,5.4vw,50px);font-weight:900;color:var(--green-deep);letter-spacing:.02em}
+h1 .marker{background:linear-gradient(transparent 62%, var(--amber-soft) 62%, #FBDCA5 100%)}
+.lead{max-width:660px;margin-top:22px;color:var(--ink-soft);font-size:16.5px}
+.hero-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}
+.fact{
+  background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);
+  padding:20px 18px;
+}
+.fact .f-label{font-size:12.5px;font-weight:700;color:var(--green);letter-spacing:.06em}
+.fact .f-value{font-family:'Zen Maru Gothic',sans-serif;font-weight:900;font-size:23px;color:var(--green-deep);margin-top:4px}
+.fact .f-note{font-size:12.5px;color:var(--ink-soft);margin-top:4px;line-height:1.6}
+
+/* ===== sections ===== */
+main{max-width:1040px;margin:0 auto;padding:0 20px 80px}
+section{padding:56px 0;border-top:1px dashed var(--line)}
+.sec-head{margin-bottom:30px}
+.sec-num{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:13px;font-weight:700;color:var(--amber);letter-spacing:.14em;margin-bottom:8px;
+}
+.sec-num::after{content:"";width:44px;height:2px;background:var(--amber);border-radius:2px}
+h2{font-size:clamp(23px,3.4vw,31px);font-weight:900;color:var(--green-deep)}
+.sec-lead{margin-top:12px;color:var(--ink-soft);max-width:700px}
+h3{font-size:18.5px;font-weight:700;color:var(--green-deep)}
+p+p{margin-top:1em}
+
+.card{
+  background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);
+  padding:26px 26px;
+}
+.card+.card{margin-top:16px}
+.cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cards-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+
+.tag{
+  display:inline-block;font-size:12px;font-weight:700;
+  background:var(--green-pale);color:var(--green);
+  border-radius:99px;padding:3px 12px;margin-bottom:10px;
+}
+.tag.warn{background:var(--amber-soft);color:#B0700F}
+
+table{width:100%;border-collapse:collapse;background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);overflow:hidden;font-size:14.5px}
+caption{text-align:left;font-size:13px;color:var(--ink-soft);margin-bottom:8px}
+th,td{padding:13px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:var(--green-pale);color:var(--green-deep);font-weight:700;white-space:nowrap;font-size:13.5px}
+tr:last-child td{border-bottom:none}
+td strong{color:var(--green-deep)}
+
+ul.dot{list-style:none}
+ul.dot li{position:relative;padding-left:22px;margin-top:8px}
+ul.dot li::before{
+  content:"";position:absolute;left:4px;top:.72em;
+  width:8px;height:8px;border-radius:50%;background:var(--amber);
+}
+
+.note{
+  background:var(--amber-soft);border:1.5px solid #F2D9AC;border-radius:var(--radius);
+  padding:18px 22px;font-size:14.5px;margin-top:20px;
+}
+.note b{color:#9A620C}
+
+/* ===== roadmap (signature) ===== */
+.roadmap{position:relative;margin-top:12px}
+.roadmap::before{
+  content:"";position:absolute;left:29px;top:8px;bottom:8px;
+  width:4px;border-radius:4px;
+  background:linear-gradient(180deg,var(--green) 0%, var(--amber) 100%);
+}
+.step{position:relative;padding:0 0 34px 86px}
+.step:last-child{padding-bottom:0}
+.step-badge{
+  position:absolute;left:0;top:0;
+  width:62px;height:62px;border-radius:50%;
+  background:#fff;border:3px solid var(--green);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  font-family:'Zen Maru Gothic',sans-serif;font-weight:900;color:var(--green-deep);
+}
+.step-badge small{font-size:9.5px;font-weight:700;color:var(--ink-soft);letter-spacing:.05em}
+.step-badge b{font-size:21px;line-height:1}
+.step:nth-child(n+7) .step-badge{border-color:var(--amber)}
+.step-when{font-size:12.5px;font-weight:700;color:var(--amber);letter-spacing:.08em;background:var(--amber-soft);display:inline-block;padding:2px 12px;border-radius:99px;margin-bottom:6px}
+.step h3{margin-bottom:6px}
+.step .card{padding:20px 22px}
+.step p, .step ul{font-size:14.8px}
+
+/* ===== checklist ===== */
+.check-group{background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);padding:22px 24px}
+.check-group+.check-group{margin-top:14px}
+.check-group h3{margin-bottom:10px;font-size:16.5px}
+.check-item{display:flex;gap:12px;align-items:flex-start;padding:8px 4px;border-radius:8px;cursor:pointer;font-size:14.8px}
+.check-item:hover{background:var(--green-pale)}
+.check-item input{margin-top:6px;width:17px;height:17px;accent-color:var(--green);flex-shrink:0;cursor:pointer}
+.check-item input:checked+span{color:var(--ink-soft);text-decoration:line-through;text-decoration-color:rgba(27,94,75,.5)}
+
+/* ===== FAQ ===== */
+details{background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);padding:0;overflow:hidden}
+details+details{margin-top:12px}
+summary{
+  cursor:pointer;list-style:none;padding:18px 22px;
+  font-weight:700;color:var(--green-deep);display:flex;gap:12px;align-items:baseline;
+  font-family:'Zen Maru Gothic',sans-serif;font-size:15.5px;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"Q";color:#fff;background:var(--green);border-radius:8px;font-size:13px;padding:1px 9px;flex-shrink:0}
+details[open] summary{border-bottom:1px dashed var(--line)}
+.answer{padding:16px 22px 20px;font-size:14.8px;color:var(--ink)}
+
+/* ===== footer ===== */
+footer{border-top:1px solid var(--line);background:var(--green-deep);color:#D8E6DE;margin-top:40px}
+.foot-inner{max-width:1040px;margin:0 auto;padding:44px 20px;font-size:13.5px;line-height:2}
+.foot-inner h4{color:#fff;font-size:15px;margin-bottom:8px}
+.disclaimer{opacity:.85}
+
+@media (max-width:760px){
+  .hero-facts,.cards-3,.cards-2{grid-template-columns:1fr}
+  header{padding:48px 20px 40px}
+  section{padding:44px 0}
+  .roadmap::before{left:24px}
+  .step{padding-left:70px}
+  .step-badge{width:52px;height:52px}
+  .step-badge b{font-size:18px}
+  table{font-size:13.5px;display:block;overflow-x:auto;white-space:nowrap}
+  table.wrap-ok{white-space:normal}
+}
+</style>
+</head>
+<body>
+
+<nav aria-label="ページ内メニュー">
+  <div class="nav-inner">
+    <div class="nav-logo">放デイ<span>開業</span>ガイド</div>
+    <div class="nav-links">
+      <a href="#about">放デイとは</a>
+      <a href="#premise">開業の前提</a>
+      <a href="#kijun">指定基準</a>
+      <a href="#roadmap">開業ロードマップ</a>
+      <a href="#money">資金計画</a>
+      <a href="#pitfalls">つまずきポイント</a>
+      <a href="#checklist">チェックリスト</a>
+      <a href="#faq">よくある質問</a>
+      <a href="https://kazenoterrace.com/" style="color:var(--green);font-weight:700">事務所トップへ ↗</a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <span class="eyebrow">障害児通所支援事業　新規参入ガイド</span>
+  <h1>放課後等デイサービスを<br>ゼロから<span class="marker">開業する</span>ための完全ロードマップ</h1>
+  <p class="lead">放課後等デイサービス（放デイ）は、児童福祉法に基づく「指定」を受けて初めて運営できる公的な福祉事業です。このページでは、事業の基礎知識から、法人設立・物件・人材・指定申請・資金計画まで、新規参入に必要な準備とプロセスを一からまとめました。</p>
+  <div class="hero-facts">
+    <div class="fact">
+      <div class="f-label">開業準備期間の目安</div>
+      <div class="f-value">6ヶ月〜1年</div>
+      <div class="f-note">法人設立から指定取得・開業まで。児発管の確保状況で大きく変動します。</div>
+    </div>
+    <div class="fact">
+      <div class="f-label">運営主体の条件</div>
+      <div class="f-value">法人格が必須</div>
+      <div class="f-note">個人事業では指定を受けられません。株式会社・合同会社・NPO法人などが必要です。</div>
+    </div>
+    <div class="fact">
+      <div class="f-label">開業資金の目安</div>
+      <div class="f-value">800〜1,500万円</div>
+      <div class="f-note">初期費用＋運転資金3ヶ月分以上の合計目安。居抜き物件の活用や車両の流用などで、さらに抑えられる場合もあります。</div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- 1 -->
+<section id="about">
+  <div class="sec-head">
+    <div class="sec-num">STEP 0 ── 基礎知識</div>
+    <h2>放課後等デイサービスとは</h2>
+    <p class="sec-lead">まずは制度の位置づけと、どんな子どもたちに何を提供する事業なのかを正しく理解しましょう。</p>
+  </div>
+  <div class="cards-3">
+    <div class="card">
+      <span class="tag">制度上の位置づけ</span>
+      <h3>児童福祉法に基づく障害児通所支援</h3>
+      <p style="font-size:14.5px;margin-top:8px">2012年の児童福祉法改正で創設されたサービスです。行政（都道府県・政令市・中核市など）から「指定障害児通所支援事業者」としての指定を受けた事業所だけが運営でき、報酬の大部分は公費（給付費）から支払われます。</p>
+    </div>
+    <div class="card">
+      <span class="tag">対象となる児童</span>
+      <h3>就学中の障害のある児童（おおむね6〜18歳）</h3>
+      <p style="font-size:14.5px;margin-top:8px">小学校・中学校・高校・特別支援学校などに就学し、市町村から「通所受給者証」の支給決定を受けた児童が対象です。放課後や土曜日、夏休みなどの長期休暇に通所します。</p>
+    </div>
+    <div class="card">
+      <span class="tag">提供するサービス</span>
+      <h3>発達支援と放課後の居場所づくり</h3>
+      <p style="font-size:14.5px;margin-top:8px">生活能力向上のための訓練、創作活動、集団生活への適応支援、地域交流、余暇の提供など。現在は「健康・生活」「運動・感覚」「認知・行動」「言語・コミュニケーション」「人間関係・社会性」の5領域を含めた総合的な支援と、支援プログラムの作成・公表が求められています。</p>
+    </div>
+  </div>
+  <div class="note"><b>収益の仕組み：</b>利用料の原則9割は国保連（国民健康保険団体連合会）経由で給付費として支払われ、残り1割が利用者負担（所得に応じた月額上限あり）です。売上の大半が公費であるため、制度・報酬改定（3年ごと）の影響を直接受けるビジネスモデルであることを最初に押さえておきましょう。</div>
+</section>
+
+<!-- 2 -->
+<section id="premise">
+  <div class="sec-head">
+    <div class="sec-num">STEP 1 ── 開業の前提</div>
+    <h2>開業に必要な2つの大前提</h2>
+  </div>
+  <div class="cards-2">
+    <div class="card">
+      <span class="tag">前提 1</span>
+      <h3>法人格の取得</h3>
+      <p style="font-size:14.8px;margin-top:8px">指定は「法人」に対して行われるため、個人事業主では開業できません。株式会社・合同会社・NPO法人・一般社団法人・社会福祉法人など形態は問われませんが、設立費用・期間・社会的信用・意思決定のしやすさが異なります。営利法人では設立が早く費用も抑えやすい合同会社、信用面を重視するなら株式会社が選ばれる傾向があります。</p>
+      <p style="font-size:14.8px">既存法人を使う場合は、定款の事業目的に「児童福祉法に基づく障害児通所支援事業」等の記載が必要です。なければ目的変更の登記を行います。</p>
+    </div>
+    <div class="card">
+      <span class="tag">前提 2</span>
+      <h3>指定権者からの「指定」</h3>
+      <p style="font-size:14.8px;margin-top:8px">事業所の所在地を管轄する都道府県（または政令指定都市・中核市）に指定申請を行い、人員・設備・運営の基準を満たしていることの審査を受けます。指定は原則「毎月1日付け」で、申請締切は自治体ごとに「指定希望日の前月10日まで」「2ヶ月前の末日まで」などと決まっています。</p>
+      <p style="font-size:14.8px">自治体によっては<strong>総量規制（新規指定の制限や公募制）</strong>を実施している地域があります。開業予定エリアで新規指定が可能かどうかは、<strong>最初に必ず確認</strong>してください。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3 -->
+<section id="kijun">
+  <div class="sec-head">
+    <div class="sec-num">STEP 2 ── 指定基準</div>
+    <h2>クリアすべき3つの指定基準（人員・設備・運営）</h2>
+    <p class="sec-lead">指定を受けるには、児童福祉法に基づく基準をすべて満たす必要があります。1つでも欠けると指定は受けられません。※詳細な基準は自治体の条例で定められるため、必ず指定権者の手引きで確認してください。</p>
+  </div>
+
+  <h3 style="margin-bottom:10px">① 人員基準（定員10名の一般的な事業所の例）</h3>
+  <table class="wrap-ok">
+    <tr><th style="width:220px">職種</th><th>主な要件</th></tr>
+    <tr><td><strong>管理者</strong>（1名）</td><td>事業所の管理業務を行う責任者。資格要件は原則なし。支障がなければ児童発達支援管理責任者などとの兼務が可能です。</td></tr>
+    <tr><td><strong>児童発達支援管理責任者</strong>（児発管・専任かつ常勤1名以上）</td><td>個別支援計画の作成・モニタリングを担う事業の要。<strong>一定の実務経験（相談支援・直接支援等）＋基礎研修・実践研修の修了</strong>が必要で、要件を満たす人材は限られています。開業準備で最大のボトルネックになりやすい職種です。</td></tr>
+    <tr><td><strong>児童指導員または保育士</strong></td><td>営業時間を通じて<strong>常勤換算で2名以上</strong>（定員10名の場合。うち1名以上は常勤）。定員が10名を超える場合は5名ごとに1名追加。理学療法士等の機能訓練担当職員や看護職員を置く場合の扱いなど、細部は自治体の手引きで確認を。</td></tr>
+  </table>
+  <div class="note"><b>注意：</b>医療的ケア児を受け入れる場合は看護職員の配置が必要です。</div>
+
+  <h3 style="margin:34px 0 10px">② 設備基準</h3>
+  <table class="wrap-ok">
+    <tr><th style="width:220px">設備</th><th>主な要件</th></tr>
+    <tr><td><strong>指導訓練室</strong></td><td>発達支援を行うための部屋。面積基準は自治体条例で異なりますが、「児童1人あたり2.47㎡以上」等の基準を設ける自治体が多く、定員10名なら30〜40㎡程度を目安に確保するケースが一般的です。</td></tr>
+    <tr><td><strong>その他の設備</strong></td><td>相談室（プライバシーに配慮した区画）、事務室、トイレ・手洗い設備、静養できるスペースなど。送迎を行う場合は車両と駐車スペースも必要です。</td></tr>
+    <tr><td><strong>建物の適法性</strong></td><td>建築基準法・消防法への適合が必須。<strong>消防署の検査を受け「消防法令適合通知書」等を取得</strong>します。使用部分が200㎡を超える場合は建築基準法上の「用途変更」の確認申請が必要になる点に注意。</td></tr>
+  </table>
+
+  <h3 style="margin:34px 0 10px">③ 運営基準</h3>
+  <ul class="dot" style="font-size:14.8px">
+    <li><strong>運営規程の整備</strong>：定員、営業日・サービス提供時間、利用料、緊急時対応などを定めます。</li>
+    <li><strong>個別支援計画の作成</strong>：児発管がアセスメントに基づき作成し、定期的にモニタリング・見直しを行います。</li>
+    <li><strong>支援プログラムの作成・公表</strong>：5領域とのつながりを明確にした支援プログラムの公表が義務化されています（未公表は減算対象）。</li>
+    <li><strong>安全・防災体制</strong>：安全計画の策定、避難訓練、送迎時の安全管理（置き去り防止）、業務継続計画（BCP）の策定など。</li>
+    <li><strong>虐待防止・身体拘束適正化</strong>：委員会の設置、責任者の配置、職員研修の実施。</li>
+    <li><strong>秘密保持・苦情対応・記録の整備</strong>：個人情報の管理体制、苦情窓口の設置、支援記録・請求記録の保存。</li>
+  </ul>
+</section>
+
+<!-- 4 -->
+<section id="roadmap">
+  <div class="sec-head">
+    <div class="sec-num">STEP 3 ── 開業プロセス</div>
+    <h2>開業までのロードマップ（全10ステップ）</h2>
+    <p class="sec-lead">準備には一般に6ヶ月〜1年かかります。時期の目安は「開業希望月」からの逆算です。自治体の申請スケジュールに合わせて前倒しで動きましょう。</p>
+  </div>
+
+  <div class="roadmap">
+    <div class="step">
+      <div class="step-badge"><small>STEP</small><b>1</b></div>
+      <div class="step-when">開業の12〜8ヶ月前</div>
+      <h3>市場調査と事業コンセプトの決定</h3>
+      <div class="card">
+        <p>開業予定エリアの児童数、既存事業所の数と特色、支援ニーズ（未就学向け児童発達支援との併設需要、重症心身障害児対応、学習特化・運動特化など）を調査します。競合が多い地域では「どんな支援に強い事業所か」という差別化コンセプトが利用者確保を左右します。あわせて<strong>自治体に総量規制の有無を確認</strong>し、参入可能かをこの段階で見極めます。</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-badge"><small>STEP</small><b>2</b></div>
+      <div class="step-when">開業の10〜8ヶ月前</div>
+      <h3>事業計画書の作成</h3>
+      <div class="card">
+        <p>理念・支援内容・ターゲット・定員・人員体制・収支計画（想定稼働率別のシミュレーション）をまとめます。融資審査・指定申請・スタッフ採用のすべての土台になる文書です。給付費の入金は請求から約2ヶ月後になるため、<strong>開業後数ヶ月は赤字前提の資金繰り計画</strong>を織り込みます。</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-badge"><small>STEP</small><b>3</b></div>
+      <div class="step-when">開業の9〜7ヶ月前</div>
+      <h3>法人設立（または定款の目的変更）</h3>
+      <div class="card">
+        <p>株式会社・合同会社・NPO法人などから形態を選び設立登記を行います。定款の事業目的には「児童福祉法に基づく障害児通所支援事業」を明記。NPO法人は認証まで数ヶ月かかるため、スケジュールに注意してください。</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-badge"><small>STEP</small><b>4</b></div>
+      <div class="step-when">開業の8〜6ヶ月前</div>
+      <h3>資金調達</h3>
+      <div class="card">
+        <p>自己資金に加え、日本政策金融公庫の創業融資、自治体の制度融資、福祉医療機構の融資などを検討します。福祉事業は社会性が評価されやすい一方、入金サイトの長さから運転資金を厚めに（最低3ヶ月分、できれば6ヶ月分）確保するのが定石です。</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-badge"><small>STEP</small><b>5</b></div>
+      <div class="step-when">開業の7〜5ヶ月前</div>
+      <h3>物件の選定・契約</h3>
+      <div class="card">
+        <ul class="dot">
+          <li>指導訓練室の面積基準を満たせるか（自治体基準を事前確認）</li>
+          <li>建築基準法・消防法に適合できるか（<strong>契約前に消防署・建築指導課へ相談</strong>）</li>
+          <li>賃貸借契約書の使用目的が「事業用（障害児通所支援事業）」になっているか</li>
+          <li>学校からの送迎動線、駐車場、バリアフリー、近隣環境</li>
+        </ul>
+        <p style="margin-top:10px">「契約してから基準を満たせないと判明した」が最も高くつく失敗です。必ず図面を持って行政に事前確認してから契約しましょう。</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-badge"><small>STEP</small><b>6</b></div>
+      <div class="step-when">開業の7〜4ヶ月前</div>
+      <h3>人材の採用（児発管の確保が最優先）</h3>
+      <div class="card">
+        <p>児童発達支援管理責任者は要件を満たす人材が少なく、採用市場でも争奪戦です。<strong>物件と並行して、最も早く動くべき項目</strong>と考えてください。児童指導員・保育士も含め、指定申請時には勤務体制表と資格証・実務経験証明書の提出が必要になるため、雇用契約（内定）まで進めておきます。</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-badge"><small>STEP</small><b>7</b></div>
+      <div class="step-when">開業の5〜4ヶ月前</div>
+      <h3>行政への事前相談・事前協議</h3>
+      <div class="card">
+        <p>指定権者の窓口で、物件図面・人員体制・事業計画をもとに事前相談（自治体により事前協議の予約制）を行います。多くの自治体で事前協議は必須または強く推奨されており、ここで指摘を受けて修正することで本申請の差し戻しを防げます。申請様式・締切・現地確認の有無もこの場で確認します。</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-badge"><small>STEP</small><b>8</b></div>
+      <div class="step-when">開業の4〜2ヶ月前</div>
+      <h3>内装工事・備品調達と申請書類の準備</h3>
+      <div class="card">
+        <p>指導訓練室等の改装、消防設備（自動火災報知設備・消火器等）の設置、机・教材・送迎車両・請求ソフトなどの調達を進めます。並行して申請書類一式を作成します。主な書類は次のとおりです（自治体で異なります）。</p>
+        <ul class="dot">
+          <li>指定申請書、付表、誓約書</li>
+          <li>定款・登記事項証明書</li>
+          <li>平面図、設備・備品一覧、事業所の写真</li>
+          <li>賃貸借契約書の写し、消防法令適合通知書（検査済証）</li>
+          <li>勤務体制一覧表、組織体制図、資格証・実務経験証明書・研修修了証の写し</li>
+          <li>運営規程、利用契約書・重要事項説明書、協力医療機関との契約内容</li>
+          <li>収支予算書、事業計画書</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-badge"><small>STEP</small><b>9</b></div>
+      <div class="step-when">開業の3〜2ヶ月前</div>
+      <h3>指定申請の提出 → 審査・現地確認</h3>
+      <div class="card">
+        <p>締切までに申請書類を提出し、書類審査と（自治体により）現地確認を受けます。審査期間は概ね1〜2ヶ月。不備があると翌月以降に指定がずれ込み、家賃と人件費だけが出ていく期間が延びるため、事前協議での確認を徹底しましょう。指定と併せて、加算の算定に必要な<strong>体制届（加算届）</strong>や、国保連への請求に必要な手続きも行います。</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-badge"><small>STEP</small><b>10</b></div>
+      <div class="step-when">指定日＝開業月</div>
+      <h3>指定取得・開業、利用者募集と請求業務の開始</h3>
+      <div class="card">
+        <p>指定通知を受けたら営業開始です。開業前から相談支援事業所・特別支援学校・学校・自治体窓口・医療機関へのあいさつ回りと見学会の開催を進め、利用者を確保します。利用者は市町村から通所受給者証の支給決定を受けて契約に至るため、<strong>問い合わせから利用開始まで時間がかかる</strong>ことを見込んで早めに動きます。サービス提供後は毎月10日までに国保連へ給付費を請求し、約2ヶ月後に入金されます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 -->
+<section id="money">
+  <div class="sec-head">
+    <div class="sec-num">STEP 4 ── 資金計画</div>
+    <h2>開業資金と収支の考え方</h2>
+  </div>
+  <table class="wrap-ok">
+    <caption>初期費用の主な内訳（物件規模・地域により大きく変動します）</caption>
+    <tr><th style="width:230px">費目</th><th>内容の例</th></tr>
+    <tr><td><strong>法人設立費用</strong></td><td>登録免許税・定款認証など（合同会社で約10万円〜、株式会社で約25万円〜）</td></tr>
+    <tr><td><strong>物件取得・改装費</strong></td><td>敷金・礼金・保証金、指導訓練室等の内装工事、バリアフリー化</td></tr>
+    <tr><td><strong>消防設備費</strong></td><td>自動火災報知設備、消火器、誘導灯等の設置（建物条件による）</td></tr>
+    <tr><td><strong>備品・教材費</strong></td><td>机・椅子・教材・玩具・PC・請求ソフトなど</td></tr>
+    <tr><td><strong>車両費</strong></td><td>送迎を行う場合の車両購入・リース費用</td></tr>
+    <tr><td><strong>開業前人件費・採用費</strong></td><td>指定申請には雇用済みの人員体制が必要なため、開業前から人件費が発生</td></tr>
+    <tr><td><strong>運転資金</strong></td><td>給付費入金まで約2ヶ月かかるため、人件費・家賃等の<strong>3〜6ヶ月分</strong>を確保</td></tr>
+  </table>
+  <div class="note"><b>収支のポイント：</b>収入は「基本報酬 × 利用日数 × 定員・稼働率」に各種加算（児童指導員等加配加算、専門的支援体制加算、送迎加算、延長支援加算など）を加えた構造です。損益分岐は稼働率に大きく依存するため、開業初年度は稼働率50〜60%程度から立ち上がる想定で保守的に計画するのが安全です。人件費率が高い事業のため、加算の取得設計と稼働率の向上が経営の生命線になります。</div>
+</section>
+
+<!-- 6 -->
+<section id="pitfalls">
+  <div class="sec-head">
+    <div class="sec-num">STEP 5 ── リスク管理</div>
+    <h2>よくあるつまずきポイント</h2>
+    <p class="sec-lead">新規参入者が実際につまずきやすいのは、制度の理解不足よりも「順番」と「確認不足」です。</p>
+  </div>
+  <div class="cards-2">
+    <div class="card">
+      <span class="tag warn">人材</span>
+      <h3>児発管が確保できず開業が延期になる</h3>
+      <p style="font-size:14.5px;margin-top:8px">最も多い遅延原因です。実務経験＋研修修了という要件を満たす人材は限られ、退職されると運営継続にも影響します（児発管不在は減算・最悪は基準違反に）。採用は最優先で動き、候補者の実務経験証明書が本当に要件を満たすか、自治体に事前確認しましょう。</p>
+    </div>
+    <div class="card">
+      <span class="tag warn">物件</span>
+      <h3>契約後に建築・消防基準を満たせないと判明</h3>
+      <p style="font-size:14.5px;margin-top:8px">用途変更（200㎡超）、消防設備の追加工事、面積不足などで想定外の費用や契約解除に至るケースがあります。<strong>賃貸借契約の前に</strong>図面を持って建築指導課・消防署・指定窓口に確認するのが鉄則です。</p>
+    </div>
+    <div class="card">
+      <span class="tag warn">申請</span>
+      <h3>書類不備で指定が翌月以降にずれる</h3>
+      <p style="font-size:14.5px;margin-top:8px">雇用契約書の職種名の記載漏れ、賃貸借契約書の使用目的が「住居」のまま、資格証の期限切れ、経歴証明の不足など、細かな不備が命取りになります。指定が1ヶ月ずれるだけで家賃＋人件費が丸ごと持ち出しに。事前協議とドラフト確認を活用しましょう。</p>
+    </div>
+    <div class="card">
+      <span class="tag warn">経営</span>
+      <h3>利用者が集まらず稼働率が上がらない</h3>
+      <p style="font-size:14.5px;margin-top:8px">指定を取れば自動的に利用者が来るわけではありません。相談支援事業所・学校・行政窓口との関係づくりを開業前から始め、支援内容の強み（療育プログラム）を明確に発信することが不可欠です。また3年ごとの報酬改定で収益構造が変わるため、制度動向のウォッチも経営者の必須業務です。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7 -->
+<section id="checklist">
+  <div class="sec-head">
+    <div class="sec-num">STEP 6 ── 実行</div>
+    <h2>開業準備チェックリスト</h2>
+    <p class="sec-lead">クリックでチェックできます（このページを閉じるとリセットされます。印刷しての利用もおすすめです）。</p>
+  </div>
+
+  <div class="check-group">
+    <h3>■ 構想・調査フェーズ</h3>
+    <label class="check-item"><input type="checkbox"><span>開業予定エリアの需要・競合・総量規制の有無を確認した</span></label>
+    <label class="check-item"><input type="checkbox"><span>事業コンセプト（支援の強み・差別化）を言語化した</span></label>
+    <label class="check-item"><input type="checkbox"><span>収支シミュレーション付きの事業計画書を作成した</span></label>
+  </div>
+  <div class="check-group">
+    <h3>■ 法人・資金フェーズ</h3>
+    <label class="check-item"><input type="checkbox"><span>法人を設立した（定款に障害児通所支援事業の目的を明記）</span></label>
+    <label class="check-item"><input type="checkbox"><span>自己資金＋融資で初期費用と運転資金3〜6ヶ月分を確保した</span></label>
+  </div>
+  <div class="check-group">
+    <h3>■ 物件・人材フェーズ</h3>
+    <label class="check-item"><input type="checkbox"><span>契約前に図面を行政・消防署に見せて基準適合を確認した</span></label>
+    <label class="check-item"><input type="checkbox"><span>賃貸借契約の使用目的を事業用として契約した</span></label>
+    <label class="check-item"><input type="checkbox"><span>児童発達支援管理責任者の要件充足を自治体に確認のうえ採用した</span></label>
+    <label class="check-item"><input type="checkbox"><span>児童指導員・保育士を常勤換算基準を満たす形で採用した</span></label>
+  </div>
+  <div class="check-group">
+    <h3>■ 申請・開業フェーズ</h3>
+    <label class="check-item"><input type="checkbox"><span>指定権者との事前相談・事前協議を完了した</span></label>
+    <label class="check-item"><input type="checkbox"><span>消防法令適合通知書（検査済）を取得した</span></label>
+    <label class="check-item"><input type="checkbox"><span>運営規程・重要事項説明書・契約書・支援プログラムを整備した</span></label>
+    <label class="check-item"><input type="checkbox"><span>虐待防止委員会・BCP・安全計画などの体制を整備した</span></label>
+    <label class="check-item"><input type="checkbox"><span>指定申請書類一式を締切までに提出した</span></label>
+    <label class="check-item"><input type="checkbox"><span>加算の体制届・国保連請求の準備（請求ソフト等）を行った</span></label>
+    <label class="check-item"><input type="checkbox"><span>相談支援事業所・学校等への周知と利用者募集を開始した</span></label>
+  </div>
+</section>
+
+<!-- 8 -->
+<section id="faq">
+  <div class="sec-head">
+    <div class="sec-num">FAQ</div>
+    <h2>よくある質問</h2>
+  </div>
+
+  <details>
+    <summary>開業する本人（経営者）に資格は必要ですか？</summary>
+    <div class="answer">経営者自身に資格は不要です。ただし、児童発達支援管理責任者（常勤・専任）と児童指導員または保育士（常勤換算2名以上）の配置は必須なので、有資格者を雇用できるかが実質的なハードルになります。経営者自身が要件を満たす場合は児発管や管理者を兼ねる選択肢もあります。</div>
+  </details>
+  <details>
+    <summary>指定申請から開業までどれくらいかかりますか？</summary>
+    <div class="answer">申請の受理から指定までは概ね1〜2ヶ月（自治体により異なる）です。ただし申請にたどり着くまでの法人設立・物件・人材・事前協議を含めると、全体では6ヶ月〜1年程度を見込むのが現実的です。指定は原則毎月1日付けで、申請締切は自治体ごとに決まっているため、開業希望月から逆算して動きましょう。</div>
+  </details>
+  <details>
+    <summary>児童発達支援（未就学児向け）と一緒にやることはできますか？</summary>
+    <div class="answer">可能です。放課後等デイサービスと児童発達支援を同一事業所で行う「多機能型」として指定を受ける方法があり、午前は未就学児、放課後は就学児と時間帯を分けて運営する事業所も多くあります。人員・設備の要件や定員の考え方が変わるため、事前協議で確認してください。</div>
+  </details>
+  <details>
+    <summary>フランチャイズと独立開業、どちらがよいですか？</summary>
+    <div class="answer">フランチャイズは療育プログラム・開業ノウハウ・書類支援を得られる一方、加盟金やロイヤルティが収益を圧迫します。独立開業は自由度が高い反面、制度理解・支援の質・集客をすべて自力で構築する必要があります。福祉・療育の実務経験の有無、資金力、目指す支援の形で判断するのがよいでしょう。いずれの場合も、指定申請の実務は障害福祉分野に強い行政書士に依頼するという選択肢もあります。</div>
+  </details>
+  <details>
+    <summary>開業後に特に気をつけるべきことは？</summary>
+    <div class="answer">①人員基準の維持（欠員は減算・指定取消リスクに直結）、②個別支援計画・支援記録・請求の適正な運用（実地指導・監査で確認されます）、③3年ごとの報酬改定への対応、④職員の定着と支援の質の向上、の4点です。指定はゴールではなくスタートで、コンプライアンス体制の維持が経営の土台になります。</div>
+  </details>
+</section>
+
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <p class="disclaimer">本ページは放課後等デイサービスの開業に関する一般的な情報を整理したものになります。人員・設備・運営基準、申請様式、スケジュール、報酬体系は自治体および法改正・報酬改定により異なり、変更されることがあります。実際の開業にあたっては、必ず指定権者への確認と最新の適用される法令等を確認したうえで検討することが必要です。</p>
+  </div>
+</footer>
+
+</body>
+</html>
