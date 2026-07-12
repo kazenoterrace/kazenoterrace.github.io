@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>風のテラス行政書士事務所 | 名古屋市・愛知県 障害福祉サービス事業の申請サポート</title>
+<title>障害福祉サービス・障害児通所支援の開業ガイド | 風のテラス行政書士事務所（名古屋市・愛知県）</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
 <link rel="icon" type="image/png" sizes="512x512" href="favicon-512x512.png">
-<meta name="description" content="名古屋市・愛知県全域対応。障害福祉サービス事業（放課後等デイサービス・児童発達支援・就労継続支援A/B型・就労移行支援）の新規指定申請、変更届、加算減算届、年間運営をサポートする行政書士事務所です。">
-<meta name="keywords" content="行政書士,名古屋,愛知県,障害福祉,指定申請,放課後等デイサービス,児童発達支援,就労継続支援,就労移行支援,加算届出">
+<meta name="description" content="これから放課後等デイサービス・児童発達支援・就労継続支援A型/B型などの障害福祉サービス・障害児通所支援事業を始めたい方へ。開業の要件・手順・資金・よくある質問を、図解を交えてわかりやすく解説します。名古屋市・愛知県対応の行政書士事務所。">
+<meta name="keywords" content="障害福祉サービス,障害児通所支援,開業,始め方,放課後等デイサービス,児童発達支援,就労継続支援A型,就労継続支援B型,指定申請,人員基準,設備基準,運営基準,名古屋,愛知県,行政書士">
 
 <!-- OGP -->
-<meta property="og:title" content="風のテラス行政書士事務所">
-<meta property="og:description" content="名古屋市・愛知県の障害福祉サービス事業をサポートする行政書士事務所">
+<meta property="og:title" content="障害福祉サービス・障害児通所支援の開業ガイド | 風のテラス行政書士事務所">
+<meta property="og:description" content="放課後等デイサービス・就労継続支援A型/B型などの開業を検討している方へ。要件・手順・資金・よくある質問を図解でわかりやすく。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://kazenoterrace.com/">
 <meta property="og:locale" content="ja_JP">
@@ -29,6 +29,384 @@
 
 <!-- CSS -->
 <link rel="stylesheet" href="assets/css/style.css">
+
+<!-- ========== 解説ページ用 追加スタイル ========== -->
+<style>
+:root{
+  --kt-green:#2f5140;
+  --kt-green-d:#22392c;
+  --kt-green-l:#5a7a68;
+  --kt-gold:#a98a3f;
+  --kt-gold-l:#c7ad6e;
+  --kt-gold-bg:#f3ecdb;
+  --kt-ink:#2f3630;
+  --kt-muted:#5c6660;
+  --kt-cream:#f7f5ef;
+  --kt-white:#ffffff;
+  --kt-line:#dfe3dc;
+  --kt-serif:'Shippori Mincho','Noto Serif JP',serif;
+  --kt-sans:'Noto Sans JP',sans-serif;
+}
+
+/* --- リード文・共通パーツ --- */
+.kt-lead{
+  font-family:var(--kt-sans);
+  color:var(--kt-muted);
+  font-size:15.5px;line-height:2.05;
+  max-width:820px;margin:0 auto 40px;text-align:left;
+}
+.kt-lead strong{color:var(--kt-green);font-weight:600;}
+.kt-note{
+  font-family:var(--kt-sans);
+  font-size:12.5px;line-height:1.9;color:#7a827b;
+  background:var(--kt-cream);border-left:3px solid var(--kt-gold-l);
+  padding:14px 18px;margin:30px auto 0;max-width:860px;border-radius:2px;
+}
+.kt-anchor-fix{scroll-margin-top:90px;}
+
+/* --- 全体像ツリー --- */
+.kt-tree{
+  display:grid;grid-template-columns:1fr 1fr;gap:24px;
+  max-width:960px;margin:0 auto;
+}
+.kt-law{
+  background:var(--kt-white);border:1px solid var(--kt-line);
+  border-top:4px solid var(--kt-green);border-radius:4px;
+  padding:26px 24px 28px;
+}
+.kt-law.kt-law-child{border-top-color:var(--kt-gold);}
+.kt-law-lawname{
+  font-family:var(--kt-sans);font-size:11px;letter-spacing:.16em;
+  color:var(--kt-gold);font-weight:600;
+}
+.kt-law-title{
+  font-family:var(--kt-serif);font-size:20px;font-weight:600;
+  color:var(--kt-green);margin:6px 0 4px;line-height:1.5;
+}
+.kt-law-desc{
+  font-family:var(--kt-sans);font-size:12.5px;color:var(--kt-muted);
+  line-height:1.8;margin:0 0 18px;
+}
+.kt-cat{margin-top:16px;}
+.kt-cat-label{
+  font-family:var(--kt-sans);font-size:12px;font-weight:600;
+  color:var(--kt-ink);margin:0 0 9px;display:flex;align-items:center;gap:8px;
+}
+.kt-cat-label::before{
+  content:"";width:6px;height:6px;border-radius:50%;
+  background:var(--kt-green-l);flex-shrink:0;
+}
+.kt-chips{display:flex;flex-wrap:wrap;gap:7px;}
+.kt-chip{
+  font-family:var(--kt-sans);font-size:12.5px;color:var(--kt-ink);
+  background:var(--kt-cream);border:1px solid var(--kt-line);
+  border-radius:100px;padding:6px 14px;line-height:1.4;
+}
+.kt-chip.kt-chip-focus{
+  background:var(--kt-green);border-color:var(--kt-green);
+  color:#fff;font-weight:600;
+}
+.kt-chip.kt-chip-focus-gold{
+  background:var(--kt-gold);border-color:var(--kt-gold);
+  color:#fff;font-weight:600;
+}
+.kt-tree-legend{
+  text-align:left;font-family:var(--kt-sans);font-size:12px;
+  color:var(--kt-muted);margin-top:22px;
+}
+.kt-tree-legend .kt-dot{
+  display:inline-block;width:11px;height:11px;border-radius:3px;
+  vertical-align:-1px;margin:0 5px 0 14px;
+}
+
+/* --- 4本柱 --- */
+.kt-pillars-wrap{max-width:960px;margin:0 auto;}
+.kt-pillars-cap{
+  background:var(--kt-green);color:#fff;text-align:center;
+  font-family:var(--kt-serif);font-size:17px;font-weight:600;
+  padding:14px 20px;border-radius:4px 4px 0 0;letter-spacing:.04em;
+}
+.kt-pillars-cap span{
+  display:block;font-family:var(--kt-sans);font-size:11.5px;
+  font-weight:400;letter-spacing:.1em;color:#cfe0d4;margin-top:4px;
+}
+.kt-pillars{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+  border:1px solid var(--kt-line);border-top:none;
+}
+.kt-pillar{
+  padding:26px 18px 24px;text-align:center;background:var(--kt-white);
+  border-right:1px solid var(--kt-line);
+}
+.kt-pillar:last-child{border-right:none;}
+.kt-pillar-icon{
+  width:52px;height:52px;margin:0 auto 14px;border-radius:50%;
+  background:var(--kt-gold-bg);color:var(--kt-green);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--kt-serif);font-size:22px;font-weight:600;
+}
+.kt-pillar h4{
+  font-family:var(--kt-serif);font-size:16px;color:var(--kt-green);
+  margin:0 0 8px;font-weight:600;
+}
+.kt-pillar p{
+  font-family:var(--kt-sans);font-size:12.5px;color:var(--kt-muted);
+  line-height:1.8;margin:0;
+}
+.kt-pillars-foot{
+  text-align:left;font-family:var(--kt-sans);font-size:13px;
+  color:var(--kt-ink);margin-top:20px;line-height:1.9;
+}
+.kt-pillars-foot strong{color:var(--kt-green);}
+
+/* --- ロードマップ（縦タイムライン） --- */
+.kt-road{max-width:780px;margin:0 auto;position:relative;}
+.kt-road::before{
+  content:"";position:absolute;left:26px;top:14px;bottom:14px;
+  width:2px;background:linear-gradient(var(--kt-green),var(--kt-gold-l));
+}
+.kt-road-step{
+  position:relative;padding:0 0 30px 74px;
+}
+.kt-road-step:last-child{padding-bottom:0;}
+.kt-road-dot{
+  position:absolute;left:6px;top:0;width:42px;height:42px;border-radius:50%;
+  background:var(--kt-green);color:#fff;display:flex;align-items:center;
+  justify-content:center;font-family:var(--kt-serif);font-size:16px;
+  font-weight:600;z-index:1;box-shadow:0 0 0 5px var(--kt-cream);
+}
+.kt-road-body{
+  background:var(--kt-white);border:1px solid var(--kt-line);
+  border-radius:4px;padding:16px 20px 17px;
+}
+.kt-road-period{
+  display:inline-block;font-family:var(--kt-sans);font-size:11px;
+  font-weight:600;letter-spacing:.05em;color:var(--kt-gold);
+  background:var(--kt-gold-bg);border-radius:100px;padding:3px 12px;margin-bottom:8px;
+}
+.kt-road-body h4{
+  font-family:var(--kt-serif);font-size:16.5px;color:var(--kt-green);
+  margin:0 0 6px;font-weight:600;
+}
+.kt-road-body p{
+  font-family:var(--kt-sans);font-size:13px;color:var(--kt-muted);
+  line-height:1.9;margin:0;
+}
+.kt-road-total{
+  text-align:left;margin-top:10px;font-family:var(--kt-sans);
+  font-size:13.5px;color:var(--kt-ink);
+}
+.kt-road-total strong{color:var(--kt-green);font-size:16px;}
+
+/* --- お金の流れ --- */
+.kt-money{
+  display:flex;align-items:stretch;justify-content:center;gap:0;
+  flex-wrap:wrap;max-width:900px;margin:0 auto;
+}
+.kt-money-box{
+  flex:1;min-width:200px;background:var(--kt-white);border:1px solid var(--kt-line);
+  border-radius:4px;padding:22px 18px;text-align:center;
+}
+.kt-money-box .kt-money-when{
+  font-family:var(--kt-sans);font-size:11.5px;font-weight:600;
+  color:var(--kt-gold);letter-spacing:.05em;
+}
+.kt-money-box h4{
+  font-family:var(--kt-serif);font-size:16px;color:var(--kt-green);
+  margin:8px 0 6px;font-weight:600;
+}
+.kt-money-box p{
+  font-family:var(--kt-sans);font-size:12px;color:var(--kt-muted);
+  line-height:1.75;margin:0;
+}
+.kt-money-arrow{
+  display:flex;align-items:center;justify-content:center;
+  color:var(--kt-gold);font-size:24px;padding:0 10px;flex-shrink:0;
+}
+.kt-money-cap{
+  text-align:left;font-family:var(--kt-sans);font-size:13.5px;
+  color:var(--kt-ink);margin-top:22px;line-height:1.95;
+}
+.kt-money-cap strong{color:var(--kt-green);}
+
+/* --- サービス詳細カード --- */
+.kt-svc{
+  background:var(--kt-white);border:1px solid var(--kt-line);
+  border-radius:6px;overflow:hidden;margin-bottom:36px;
+}
+.kt-svc-head{
+  background:var(--kt-green);color:#fff;padding:24px 30px;
+  display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+}
+.kt-svc-head.kt-head-gold{background:var(--kt-gold);}
+.kt-svc-head.kt-head-deep{background:var(--kt-green-d);}
+.kt-svc-badge{
+  font-family:var(--kt-sans);font-size:11px;letter-spacing:.14em;
+  background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);
+  border-radius:100px;padding:4px 14px;font-weight:600;
+}
+.kt-svc-head h3{
+  font-family:var(--kt-serif);font-size:24px;font-weight:600;margin:0;
+  line-height:1.4;color:#fff;
+}
+.kt-svc-head .kt-svc-law{
+  font-family:var(--kt-sans);font-size:12px;color:rgba(255,255,255,.85);
+  margin-left:auto;line-height:1.6;
+}
+.kt-svc-body{padding:28px 30px 30px;}
+.kt-svc-intro{
+  font-family:var(--kt-sans);font-size:14px;color:var(--kt-ink);
+  line-height:2;margin:0 0 24px;
+}
+.kt-facts{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:0;
+  border:1px solid var(--kt-line);border-radius:4px;overflow:hidden;
+}
+.kt-fact{
+  padding:15px 18px;border-right:1px solid var(--kt-line);
+  border-bottom:1px solid var(--kt-line);
+}
+.kt-fact:nth-child(2n){border-right:none;}
+.kt-fact-label{
+  font-family:var(--kt-sans);font-size:11px;font-weight:600;
+  color:var(--kt-gold);letter-spacing:.05em;margin-bottom:5px;
+}
+.kt-fact-value{
+  font-family:var(--kt-sans);font-size:13.5px;color:var(--kt-ink);
+  line-height:1.75;
+}
+.kt-fact-value small{color:var(--kt-muted);font-size:11.5px;}
+
+/* --- 比較表 --- */
+.kt-compare-wrap{max-width:860px;margin:0 auto 8px;overflow-x:auto;}
+.kt-compare{
+  width:100%;border-collapse:collapse;font-family:var(--kt-sans);
+  background:var(--kt-white);min-width:560px;
+}
+.kt-compare th,.kt-compare td{
+  border:1px solid var(--kt-line);padding:14px 16px;
+  font-size:13.5px;line-height:1.7;vertical-align:top;
+}
+.kt-compare thead th{
+  font-family:var(--kt-serif);font-size:16px;font-weight:600;text-align:center;
+  color:#fff;
+}
+.kt-compare thead th.kt-th-a{background:var(--kt-green);}
+.kt-compare thead th.kt-th-b{background:var(--kt-gold);}
+.kt-compare thead th.kt-th-plain{background:var(--kt-green);}
+
+/* --- 法人種別ブロック --- */
+.kt-entity-wrap{max-width:960px;margin:40px auto 0;}
+.kt-entity-title{
+  text-align:left;font-family:var(--kt-serif);font-size:19px;font-weight:600;
+  color:var(--kt-green);margin:0 0 6px;
+}
+.kt-entity-title span{
+  display:block;font-family:var(--kt-sans);font-size:12.5px;font-weight:400;
+  color:var(--kt-muted);margin-top:6px;line-height:1.8;
+}
+.kt-entity-scroll{overflow-x:auto;margin-top:20px;}
+.kt-entity{
+  width:100%;border-collapse:collapse;font-family:var(--kt-sans);
+  background:var(--kt-white);min-width:640px;
+}
+.kt-entity thead th{
+  background:var(--kt-green);color:#fff;font-family:var(--kt-serif);
+  font-size:14px;font-weight:600;padding:13px 14px;text-align:left;border:1px solid var(--kt-green);
+}
+.kt-entity tbody th{
+  background:var(--kt-cream);text-align:left;font-weight:600;color:var(--kt-ink);
+  font-size:13.5px;padding:14px 16px;border:1px solid var(--kt-line);width:200px;line-height:1.6;
+}
+.kt-entity tbody th small{display:block;font-weight:400;font-size:11px;color:var(--kt-muted);margin-top:3px;}
+.kt-entity td{
+  border:1px solid var(--kt-line);padding:14px 16px;font-size:13px;
+  color:var(--kt-muted);line-height:1.8;vertical-align:top;
+}
+.kt-entity td strong{color:var(--kt-green);font-weight:600;}
+.kt-tag-eiri{
+  display:inline-block;font-size:10.5px;font-weight:600;border-radius:100px;
+  padding:2px 9px;line-height:1.4;white-space:nowrap;
+}
+.kt-tag-eiri.is-eiri{background:#eaf0ec;color:var(--kt-green);}
+.kt-tag-eiri.is-hi{background:var(--kt-gold-bg);color:var(--kt-gold);}
+.kt-compare thead th.kt-th-item{background:var(--kt-green-d);width:150px;}
+.kt-compare tbody th{
+  background:var(--kt-cream);font-weight:600;color:var(--kt-ink);
+  text-align:left;width:150px;
+}
+.kt-compare td{color:var(--kt-muted);}
+.kt-compare td strong{color:var(--kt-green);font-weight:600;}
+
+/* --- FAQ アコーディオン --- */
+.kt-faq{max-width:820px;margin:0 auto;}
+.kt-faq details{
+  background:var(--kt-white);border:1px solid var(--kt-line);
+  border-radius:4px;margin-bottom:12px;overflow:hidden;
+}
+.kt-faq details[open]{border-color:var(--kt-green-l);}
+.kt-faq summary{
+  list-style:none;cursor:pointer;padding:18px 52px 18px 54px;
+  position:relative;font-family:var(--kt-sans);font-size:14.5px;
+  font-weight:600;color:var(--kt-ink);line-height:1.7;
+}
+.kt-faq summary::-webkit-details-marker{display:none;}
+.kt-faq summary::before{
+  content:"Q";position:absolute;left:18px;top:16px;
+  width:26px;height:26px;border-radius:50%;background:var(--kt-green);
+  color:#fff;font-family:var(--kt-serif);font-size:14px;font-weight:600;
+  display:flex;align-items:center;justify-content:center;
+}
+.kt-faq summary::after{
+  content:"＋";position:absolute;right:20px;top:17px;
+  color:var(--kt-gold);font-size:18px;transition:transform .25s ease;
+}
+.kt-faq details[open] summary::after{content:"－";}
+.kt-faq-a{
+  padding:2px 24px 20px 54px;position:relative;
+  font-family:var(--kt-sans);font-size:13.5px;color:var(--kt-muted);
+  line-height:2;
+}
+.kt-faq-a::before{
+  content:"A";position:absolute;left:18px;top:0;
+  width:26px;height:26px;border-radius:50%;background:var(--kt-gold-bg);
+  color:var(--kt-gold);font-family:var(--kt-serif);font-size:14px;font-weight:600;
+  display:flex;align-items:center;justify-content:center;
+}
+.kt-faq-a strong{color:var(--kt-green);font-weight:600;}
+
+/* --- 事業者向けサポート小バナー --- */
+.kt-help{
+  max-width:900px;margin:56px auto 0;background:var(--kt-cream);
+  border:1px solid var(--kt-line);border-radius:6px;
+  padding:30px 34px;text-align:left;
+}
+.kt-help h3{
+  font-family:var(--kt-serif);font-size:20px;color:var(--kt-green);
+  margin:0 0 10px;font-weight:600;
+}
+.kt-help p{
+  font-family:var(--kt-sans);font-size:13.5px;color:var(--kt-muted);
+  line-height:1.95;margin:0 0 20px;
+}
+
+/* --- レスポンシブ --- */
+@media (max-width:768px){
+  .kt-tree{grid-template-columns:1fr;}
+  .kt-pillars{grid-template-columns:repeat(2,1fr);}
+  .kt-pillar:nth-child(2){border-right:none;}
+  .kt-pillar:nth-child(1),.kt-pillar:nth-child(2){border-bottom:1px solid var(--kt-line);}
+  .kt-facts{grid-template-columns:1fr;}
+  .kt-fact{border-right:none;}
+  .kt-money-arrow{transform:rotate(90deg);padding:6px 0;width:100%;}
+  .kt-money-box{min-width:100%;}
+  .kt-svc-head{padding:20px 20px;}
+  .kt-svc-head h3{font-size:20px;}
+  .kt-svc-head .kt-svc-law{margin-left:0;width:100%;}
+  .kt-svc-body{padding:22px 20px 24px;}
+  .kt-faq summary{font-size:13.5px;}
+}
+</style>
 </head>
 <body>
 
@@ -49,13 +427,12 @@
     </button>
     <nav class="nav">
       <a href="https://www.kazenoterrace-office.com/">公式サイト ↗</a>
-      <a href="#concerns">お悩み</a>
-      <a href="#strengths">当事務所の強み</a>
-      <a href="#services">サービス</a>
-      <a href="#pricing">料金</a>
-      <a href="#flow">ご依頼の流れ</a>
-      <a href="#profile">行政書士紹介</a>
-      <a href="#office">事務所概要</a>
+      <a href="#about">事業の全体像</a>
+      <a href="#requirements">開業の要件</a>
+      <a href="#flow">開業の流れ</a>
+      <a href="#services">サービス種別</a>
+      <a href="#faq">よくある質問</a>
+      <a href="#profile">事務所紹介</a>
       <a href="#contact" class="nav-cta">お問い合わせ</a>
     </nav>
   </div>
@@ -63,22 +440,22 @@
 
 <!-- ========== Hero ========== -->
 <section class="hero">
-  <div class="hero-decoration right">風</div>
+  <div class="hero-decoration right">道</div>
   <div class="container hero-content">
-    <div class="hero-tagline">名古屋市・愛知県全域 ／ 障害福祉サービス事業の申請サポート</div>
+    <div class="hero-tagline">はじめての方向け ／ 障害福祉サービス・障害児通所支援事業の開業ガイド</div>
     <h1>
-      障害福祉サービス事業の<br>
-      <span class="accent">「申請」</span>も<span class="accent">「運営」</span>も、<br>
-      私たちが寄り添います。
+      障害福祉の事業を<br>
+      <span class="accent">「始めたい」</span>を、<br>
+      いちばん最初から。
     </h1>
     <p class="hero-lead">
-      新規指定申請から、変更届・加算減算届・年間運営サポートまで。<br>
-      障害福祉に強い行政書士が、煩雑な行政手続きを引き受け、<br>
-      事業者様が「本来の支援」に専念できる環境を整えます。
+      放課後等デイサービス、児童発達支援、就労継続支援A型・B型——。<br>
+      「そもそも何が必要？」「どんな順番で進めるの？」という段階から、<br>
+      開業までの<strong style="color:var(--kt-green);font-weight:600;">要件・手順・お金の話</strong>を、図解とよくある質問でやさしく整理しました。
     </p>
     <div class="hero-cta">
-      <a href="#contact" class="btn btn-primary">無料相談はこちら →</a>
-      <a href="tel:052-750-5612" class="btn btn-outline">お電話でのお問い合わせ</a>
+      <a href="#about" class="btn btn-primary">まず全体像を見る →</a>
+      <a href="#contact" class="btn btn-outline">手続きの相談はこちら</a>
     </div>
 
     <!-- ========== 開業ガイド リンクカード ========== -->
@@ -125,315 +502,533 @@
     <a href="/houkago-day-kaigyo.html" class="kt-guide-card">
       <div class="kt-guide-card-body">
         <span class="kt-guide-card-tag">GUIDE ／ お役立ち情報</span>
-        <p class="kt-guide-card-title">放課後等デイサービス開業ガイド</p>
-        <p class="kt-guide-card-desc">新規開設に必要な準備と指定申請までの流れを、ゼロからわかりやすく整理した完全ロードマップです。</p>
+        <p class="kt-guide-card-title">放課後等デイサービス開業ガイド（詳細版）</p>
+        <p class="kt-guide-card-desc">新規開設に必要な準備と指定申請までの流れを、ゼロからさらに詳しく整理した完全ロードマップです。</p>
       </div>
       <span class="kt-guide-card-arrow">→</span>
     </a>
 
     <div class="hero-meta">
       <div class="hero-meta-item">
-        <span class="hero-meta-label">SPECIALTY</span>
-        <span class="hero-meta-value">障害福祉サービスサポート</span>
+        <span class="hero-meta-label">FOR</span>
+        <span class="hero-meta-value">これから始めたい方</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="hero-meta-label">CONTENT</span>
+        <span class="hero-meta-value">要件・手順・資金・Q&amp;A</span>
       </div>
       <div class="hero-meta-item">
         <span class="hero-meta-label">AREA</span>
         <span class="hero-meta-value">名古屋市・愛知県全域</span>
       </div>
-      <div class="hero-meta-item">
-        <span class="hero-meta-label">SUPPORT</span>
-        <span class="hero-meta-value">立ち上げから年間運営まで</span>
-      </div>
     </div>
   </div>
 </section>
 
-<!-- ========== Concerns ========== -->
-<section class="section section-alt" id="concerns">
+<!-- ========== About / 全体像 ========== -->
+<section class="section section-alt kt-anchor-fix" id="about">
   <div class="container">
     <div class="section-header reveal">
-      <div class="section-tag">CONCERNS</div>
-      <h2 class="section-title">こんなお悩みありませんか？</h2>
+      <div class="section-tag">OVERVIEW</div>
+      <h2 class="section-title">そもそも「障害福祉サービス」<br>「障害児通所支援」とは？</h2>
       <span class="section-decoration"></span>
-      <p class="section-subtitle">障害福祉サービス事業を運営される皆様の、こんなお悩みに寄り添います。</p>
+      <p class="section-subtitle">まずは、これから始めようとしている事業が、どの制度のどこに位置づくのかを整理しましょう。</p>
     </div>
-    <div class="concerns-grid reveal">
-      <div class="concern-card">
-        <p>これから新たに事業所を立ち上げたいが、何から手をつければよいか分からない</p>
+
+    <p class="kt-lead reveal">
+      障害のある方を支える事業は、大きく <strong>2つの法律</strong> に分かれています。<br>
+      子ども向けの通所支援は<strong>「児童福祉法」</strong>、大人向けの福祉サービスは<strong>「障害者総合支援法」</strong>が根拠です。<br>
+      どちらも、事業を行うには <strong>都道府県・市町村から「指定」</strong>を受ける必要があります。
+    </p>
+
+    <div class="kt-tree reveal">
+      <!-- 児童福祉法 -->
+      <div class="kt-law kt-law-child">
+        <div class="kt-law-lawname">根拠法 ／ 児童福祉法</div>
+        <div class="kt-law-title">障害児通所支援</div>
+        <p class="kt-law-desc">障害のある子どもが、通いながら発達の支援を受けるサービスです。</p>
+        <div class="kt-cat">
+          <p class="kt-cat-label">主なサービス</p>
+          <div class="kt-chips">
+            <span class="kt-chip">児童発達支援</span>
+            <span class="kt-chip kt-chip-focus-gold">放課後等デイサービス</span>
+            <span class="kt-chip">保育所等訪問支援</span>
+            <span class="kt-chip">居宅訪問型児童発達支援</span>
+          </div>
+        </div>
       </div>
-      <div class="concern-card">
-        <p>日々の支援業務に追われ、変更届や加算届の手続きに手が回らない</p>
-      </div>
-      <div class="concern-card">
-        <p>人員の入退職や事業所の体制変更があるたびに、書類の準備が大きな負担になっている</p>
-      </div>
-      <div class="concern-card">
-        <p>加算の届出が遅れて、本来得られるはずの報酬を取り逃がしてしまっている</p>
-      </div>
-      <div class="concern-card">
-        <p>監査・実地指導が不安。日頃から相談できる専門家がそばにいてほしい</p>
-      </div>
-      <div class="concern-card">
-        <p>児童発達支援・放課後等デイサービスや、就労支援事業の制度に詳しい行政書士に頼みたい</p>
+
+      <!-- 障害者総合支援法 -->
+      <div class="kt-law">
+        <div class="kt-law-lawname">根拠法 ／ 障害者総合支援法</div>
+        <div class="kt-law-title">障害福祉サービス</div>
+        <p class="kt-law-desc">大人が「働く」「暮らす」「訓練を受ける」ことを支えるサービスです。</p>
+        <div class="kt-cat">
+          <p class="kt-cat-label">就労系（働くことの支援）</p>
+          <div class="kt-chips">
+            <span class="kt-chip">就労移行支援</span>
+            <span class="kt-chip kt-chip-focus">就労継続支援A型</span>
+            <span class="kt-chip kt-chip-focus">就労継続支援B型</span>
+            <span class="kt-chip">就労定着支援</span>
+          </div>
+        </div>
+        <div class="kt-cat">
+          <p class="kt-cat-label">その他（介護・訓練・住まい 等）</p>
+          <div class="kt-chips">
+            <span class="kt-chip">生活介護</span>
+            <span class="kt-chip">自立訓練</span>
+            <span class="kt-chip">共同生活援助（GH）</span>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="concerns-closing reveal">
-      そのお悩み、<br>
-      障害福祉サービスに強い行政書士に<br>
-      お任せください。
+
+    <p class="kt-tree-legend reveal">
+      <span class="kt-dot" style="background:var(--kt-gold);"></span>このページで特に詳しく解説：放課後等デイサービス
+      <span class="kt-dot" style="background:var(--kt-green);"></span>就労継続支援A型・B型
+    </p>
+
+    <div class="kt-note reveal">
+      ※ このページは制度の全体像をつかむための<strong>一般的な概要</strong>です。人員数・面積・対象年齢などの細かな基準は、<strong>自治体（指定権者）や制度改正によって変わる</strong>ことがあります。実際の物件契約・採用・申請の前に、必ず管轄の自治体または専門家にご確認ください。
     </div>
   </div>
 </section>
 
-<!-- ========== Strengths ========== -->
-<section class="section" id="strengths">
+<!-- ========== Requirements / 4本柱 ========== -->
+<section class="section kt-anchor-fix" id="requirements">
   <div class="container">
     <div class="section-header reveal">
-      <div class="section-tag">OUR STRENGTHS</div>
-      <h2 class="section-title">行政書士を活用する<br>3つのメリット</h2>
+      <div class="section-tag">REQUIREMENTS</div>
+      <h2 class="section-title">開業に必要な「4つの条件」</h2>
       <span class="section-decoration"></span>
-      <p class="section-subtitle">当事務所にご依頼いただくことで、事業運営に確かな価値をご提供します。</p>
+      <p class="section-subtitle">どのサービスでも共通して、この4つを満たすことで自治体の「指定」を受けられます。</p>
     </div>
-    <div class="strengths-grid">
-      <div class="strength-card reveal">
-        <div class="strength-number">MERIT 01</div>
-        <div class="strength-icon">専</div>
-        <h3>本来業務に専念できる</h3>
-        <p class="strength-sub">行政手続きの負担を軽減</p>
-        <p>障害福祉サービス事業の運営には、新規指定申請、変更届、加算減算届、報酬改定対応など、絶え間なく行政手続きが発生します。これらを外部の専門家に任せることで、事業者様は支援の質の向上や人材育成といった本来の業務に集中できます。</p>
-        <p>「書類仕事に追われて、利用者様と向き合う時間が削られている」—— そんな状況を変えるのが、当事務所の役割です。</p>
+
+    <div class="kt-pillars-wrap reveal">
+      <div class="kt-pillars-cap">
+        都道府県・市町村の「指定」を受ける
+        <span>下の4つの条件がそろって、はじめて事業をスタートできます</span>
       </div>
-      <div class="strength-card reveal">
-        <div class="strength-number">MERIT 02</div>
-        <div class="strength-icon">視</div>
-        <h3>外部専門家の<br>客観的な視点</h3>
-        <p class="strength-sub">改善ポイントの的確な指摘</p>
-        <p>長く事業を運営していると、内部だけでは気づきにくい運営上のリスクや、改善余地のある運用方法が生じます。外部の専門家として継続的に関わることで、制度改正への対応漏れ、加算取得の機会損失、書類管理上の不備などを早期に発見し、改善提案を行います。</p>
-        <p>監査・実地指導を見据えた日常的な体制整備にも、第三者の視点が大きな効果を発揮します。</p>
+      <div class="kt-pillars">
+        <div class="kt-pillar">
+          <div class="kt-pillar-icon">法</div>
+          <h4>法人格</h4>
+          <p>個人では開業できません。株式会社・合同会社・NPO法人・社会福祉法人などの法人が必要。定款の事業目的に該当事業の記載も必須です。</p>
+        </div>
+        <div class="kt-pillar">
+          <div class="kt-pillar-icon">人</div>
+          <h4>人員基準</h4>
+          <p>管理者・サービス管理責任者（児発管）・支援員など、職種ごとに必要な人数と資格が決められています。</p>
+        </div>
+        <div class="kt-pillar">
+          <div class="kt-pillar-icon">設</div>
+          <h4>設備基準</h4>
+          <p>必要な部屋・広さ、消防・建築のルールを満たす物件が必要。契約前の自治体相談が重要です。</p>
+        </div>
+        <div class="kt-pillar">
+          <div class="kt-pillar-icon">運</div>
+          <h4>運営基準</h4>
+          <p>運営規程、個別支援計画、記録の整備など、開業後に守るべき運営上のルールを整えます。</p>
+        </div>
       </div>
-      <div class="strength-card reveal">
-        <div class="strength-number">MERIT 03</div>
-        <div class="strength-icon">速</div>
-        <h3>速やかな<br>加算・減算届出</h3>
-        <p class="strength-sub">持続的な事業運営をサポート</p>
-        <p>障害福祉サービスの報酬は、加算の取得状況によって大きく変動します。算定要件を満たした時点で速やかに届出を行うことが、安定した事業運営の鍵となります。</p>
-        <p>当事務所では、加算要件のチェックから届出書類の作成・提出までを迅速に対応。届出のタイミングを逃さず、本来得られるべき報酬を確実に確保できる体制を整えます。</p>
+      <p class="kt-pillars-foot">
+        なかでも最初の壁になりやすいのが <strong>「人（サービス管理責任者・児童発達支援管理責任者）」の確保</strong> と <strong>「物件」の選定</strong> です。<br>
+        いずれも要件を満たすまでに時間がかかるため、早めの着手が成功の分かれ目になります。
+      </p>
+    </div>
+
+    <!-- 法人の種類 比較 -->
+    <div class="kt-entity-wrap reveal">
+      <p class="kt-entity-title">
+        補足：法人にはどんな種類がある？
+        <span>「株式会社・合同会社」のような営利法人だけでなく、「NPO法人」や「社会福祉法人」でも開業できます。<br>それぞれ設立のしやすさ・費用・社会的な性格・税制などが異なります。</span>
+      </p>
+      <div class="kt-entity-scroll">
+        <table class="kt-entity">
+          <thead>
+            <tr>
+              <th style="width:200px;">法人の種類</th>
+              <th style="width:34%;">設立のしやすさ・特徴</th>
+              <th>こんな方に向いています</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>株式会社／合同会社<br><small>営利法人</small></th>
+              <td><span class="kt-tag-eiri is-eiri">営利（配当可）</span><br>比較的<strong>かんたん・短期間</strong>で設立できます。合同会社は株式会社より設立費用を抑えやすいのが特徴。意思決定も自由度が高めです。</td>
+              <td>スピード重視で新規参入したい方。まず小さく始めたい方に選ばれることが多い形態です。</td>
+            </tr>
+            <tr>
+              <th>一般社団法人<br><small>非営利法人</small></th>
+              <td><span class="kt-tag-eiri is-hi">非営利</span><br>剰余金を構成員に分配しない「非営利」の形。設立は比較的しやすく、営利法人と社会福祉法人の中間的な選択肢です。</td>
+              <td>「非営利」の形をとりたいが、社会福祉法人ほどの負担は避けたいという方。</td>
+            </tr>
+            <tr>
+              <th>NPO法人<br><small>特定非営利活動法人</small></th>
+              <td><span class="kt-tag-eiri is-hi">非営利</span><br>設立に<strong>所轄庁の認証が必要</strong>で、数か月かかります。利益の分配はできませんが、社会的信用や地域の理解を得やすい面があります。</td>
+              <td>地域に根ざした非営利の運営を大切にしたい方。設立に一定の手間と時間をかけられる方。</td>
+            </tr>
+            <tr>
+              <th>社会福祉法人<br><small>公益性の高い法人</small></th>
+              <td><span class="kt-tag-eiri is-hi">非営利・公益</span><br>資産要件やガバナンス（理事会・評議員会等）など<strong>設立の認可ハードルが高い</strong>反面、高い社会的信用と税制上の優遇があります。</td>
+              <td>大規模・本格的に福祉事業を担う方向け。新規の小規模開業では選ばれにくい傾向があります。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="kt-note" style="margin-top:22px;">
+        ※ どの法人でも、<strong>定款（社会福祉法人は定款）の「事業目的」に該当事業の記載</strong>が必要です。既存の法人でも記載がなければ変更が必要になります。設立要件・費用・税制の扱いは制度改正や自治体の運用で変わることがあるため、法人の種類選びは事業規模や資金計画とあわせて、専門家に相談しながら決めることをおすすめします。
       </div>
     </div>
   </div>
 </section>
 
-<!-- ========== Services ========== -->
-<section class="section section-alt" id="services">
+<!-- ========== Flow / 開業までの流れ ========== -->
+<section class="section section-alt kt-anchor-fix" id="flow">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">ROADMAP</div>
+      <h2 class="section-title">開業までの流れ</h2>
+      <span class="section-decoration"></span>
+      <p class="section-subtitle">思い立ってから開業まで、一般的には半年〜1年ほど。全体の道のりを見ておきましょう。</p>
+    </div>
+
+    <div class="kt-road reveal">
+      <div class="kt-road-step">
+        <div class="kt-road-dot">1</div>
+        <div class="kt-road-body">
+          <span class="kt-road-period">スタート</span>
+          <h4>情報収集・事業種別の決定</h4>
+          <p>どのサービスを、どの地域で、どんな規模で行うかを固めます。地域のニーズや競合状況もこの段階で確認します。</p>
+        </div>
+      </div>
+      <div class="kt-road-step">
+        <div class="kt-road-dot">2</div>
+        <div class="kt-road-body">
+          <span class="kt-road-period">〜1〜2か月</span>
+          <h4>法人の準備</h4>
+          <p>法人がなければ設立します。すでに法人がある場合も、定款の事業目的に該当事業が入っているかを確認し、必要なら変更登記を行います。</p>
+        </div>
+      </div>
+      <div class="kt-road-step">
+        <div class="kt-road-dot">3</div>
+        <div class="kt-road-body">
+          <span class="kt-road-period">並行して進める</span>
+          <h4>事業計画・資金計画</h4>
+          <p>収支の見通しと、開業資金・当面の運転資金を計画します。金融機関からの融資を検討する場合はここが要になります。</p>
+        </div>
+      </div>
+      <div class="kt-road-step">
+        <div class="kt-road-dot">4</div>
+        <div class="kt-road-body">
+          <span class="kt-road-period">早めが吉</span>
+          <h4>物件の選定・自治体への事前相談</h4>
+          <p>設備基準・用途地域・消防・建築のルールを満たすかを、<strong>契約前に</strong>自治体へ相談します。多くの自治体で事前協議が必要です。</p>
+        </div>
+      </div>
+      <div class="kt-road-step">
+        <div class="kt-road-dot">5</div>
+        <div class="kt-road-body">
+          <span class="kt-road-period">最重要・時間がかかる</span>
+          <h4>人員の確保</h4>
+          <p>サービス管理責任者・児童発達支援管理責任者は資格要件を満たす人材が少なく、採用に時間がかかります。最優先で動きましょう。</p>
+        </div>
+      </div>
+      <div class="kt-road-step">
+        <div class="kt-road-dot">6</div>
+        <div class="kt-road-body">
+          <span class="kt-road-period">締切に注意</span>
+          <h4>指定申請</h4>
+          <p>書類一式を整えて申請します。多くの自治体で「開業希望月の前月●日まで」といった締切があり、指定は原則毎月1日付です。</p>
+        </div>
+      </div>
+      <div class="kt-road-step">
+        <div class="kt-road-dot">7</div>
+        <div class="kt-road-body">
+          <span class="kt-road-period">ゴール</span>
+          <h4>指定・開業</h4>
+          <p>指定通知書を受け取ったら、いよいよサービス開始。開業後は加算の届出や運営指導への備えなど、運営フェーズに入ります。</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="kt-road-total reveal">全体でおおよそ <strong>半年〜1年</strong>。人材確保と物件探しに最も時間がかかります。</p>
+  </div>
+</section>
+
+<!-- ========== Money / お金の話 ========== -->
+<section class="section kt-anchor-fix" id="money">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">MONEY</div>
+      <h2 class="section-title">見落としがちな「お金」の話</h2>
+      <span class="section-decoration"></span>
+      <p class="section-subtitle">開業でつまずきやすいのが資金繰り。特に「報酬が入ってくるまでのタイムラグ」に注意が必要です。</p>
+    </div>
+
+    <div class="kt-money reveal">
+      <div class="kt-money-box">
+        <div class="kt-money-when">例：4月</div>
+        <h4>サービス提供</h4>
+        <p>4月中に利用者へサービスを提供します。この時点では、まだ報酬は入ってきません。</p>
+      </div>
+      <div class="kt-money-arrow">→</div>
+      <div class="kt-money-box">
+        <div class="kt-money-when">例：5月上旬</div>
+        <h4>国保連へ請求</h4>
+        <p>翌月に、国民健康保険団体連合会（国保連）へ報酬を請求します。</p>
+      </div>
+      <div class="kt-money-arrow">→</div>
+      <div class="kt-money-box">
+        <div class="kt-money-when">例：6月下旬</div>
+        <h4>報酬の入金</h4>
+        <p>さらに翌月末ごろに入金。つまり<strong style="color:var(--kt-green);">約2か月遅れ</strong>で売上が入ります。</p>
+      </div>
+    </div>
+
+    <p class="kt-money-cap reveal">
+      売上（報酬）が入るのは、サービス提供から <strong>約2か月後</strong>。<br>
+      その間も家賃・人件費は毎月発生するため、<strong>数か月分の運転資金</strong>を手元に用意しておくことが、安定した滑り出しの鍵になります。
+    </p>
+
+    <div class="kt-note reveal">
+      ※ 初期費用の目安は、物件の規模・改装の有無・地域によって大きく変わります。物件取得費・内装・備品・人件費（開業前研修含む）・運転資金などを、事業計画のなかで具体的に見積もっておきましょう。
+    </div>
+  </div>
+</section>
+
+<!-- ========== Services / サービス種別ごとの解説 ========== -->
+<section class="section section-alt kt-anchor-fix" id="services">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag">SERVICES</div>
-      <h2 class="section-title">サービス内容</h2>
+      <h2 class="section-title">サービス種別ごとの解説</h2>
       <span class="section-decoration"></span>
-      <p class="section-subtitle">障害福祉サービス事業者様を、立ち上げから運営の各フェーズまで一貫してサポートします。</p>
+      <p class="section-subtitle">問い合わせの多い3つのサービスについて、特徴・基準・よくあるトピックをまとめました。</p>
     </div>
 
-    <!-- メインサービス -->
-    <div class="service-main reveal">
-      <h3>新規指定申請サポート</h3>
-      <p class="service-tagline">新たな事業所の立ち上げを最初から最後まで</p>
-      <p>障害福祉サービス事業所の新規指定申請は、提出書類が多岐にわたり、自治体ごとに要求される様式や運用も異なるため、初めて取り組む事業者様にとっては大きな負担となります。当事務所では、事業計画の整理段階から指定申請書類の作成・提出、指定後の運営体制の構築まで、新規参入の全工程を伴走サポートします。</p>
-      <div class="service-main-body">
-        <div>
-          <h4>主な対応事業種別</h4>
-          <ul>
-            <li>児童発達支援・放課後等デイサービス</li>
-            <li>就労移行支援</li>
-            <li>就労継続支援A型・B型</li>
-            <li>その他の障害福祉サービス事業（要相談）</li>
-          </ul>
+    <!-- 放課後等デイサービス -->
+    <div class="kt-svc reveal">
+      <div class="kt-svc-head kt-head-gold">
+        <span class="kt-svc-badge">障害児通所支援</span>
+        <h3>放課後等デイサービス</h3>
+        <span class="kt-svc-law">根拠法：児童福祉法</span>
+      </div>
+      <div class="kt-svc-body">
+        <p class="kt-svc-intro">
+          就学している障害のある子どもが、放課後や長期休暇に通い、遊びや学び・生活能力の向上のための支援を受ける場です。いわば<strong>「障害のある子どものための学童＋療育」</strong>のようなイメージ。利用には、自治体が発行する<strong>「通所受給者証」</strong>が必要です。
+        </p>
+        <div class="kt-facts">
+          <div class="kt-fact">
+            <div class="kt-fact-label">対象</div>
+            <div class="kt-fact-value">原則 6〜18歳（小学生〜高校生）の就学児で、支援を必要とする子ども</div>
+          </div>
+          <div class="kt-fact">
+            <div class="kt-fact-label">定員</div>
+            <div class="kt-fact-value">原則 10名以上</div>
+          </div>
+          <div class="kt-fact">
+            <div class="kt-fact-label">必須の人員</div>
+            <div class="kt-fact-value">管理者／児童発達支援管理責任者（児発管・専任常勤1名以上）／児童指導員または保育士</div>
+          </div>
+          <div class="kt-fact">
+            <div class="kt-fact-label">支援員の配置目安</div>
+            <div class="kt-fact-value">定員10名で2名以上（うち1名以上は常勤）。<small>営業時間を通じて配置が必要。</small></div>
+          </div>
         </div>
-        <div>
-          <h4>サポート内容</h4>
-          <ul>
-            <li>事業計画・収支計画の整理</li>
-            <li>法人の事業目的・定款の確認、変更手続き</li>
-            <li>指定基準（人員・設備・運営）の充足確認</li>
-            <li>指定申請書類一式の作成</li>
-            <li>自治体（愛知県・名古屋市）との事前相談・調整</li>
-            <li>指定後の運営開始サポート</li>
-          </ul>
+
+        <div class="kt-faq" style="margin-top:26px;">
+          <details>
+            <summary>児発管（児童発達支援管理責任者）が見つかりません。開業できますか？</summary>
+            <div class="kt-faq-a">児発管は<strong>専任・常勤で1名以上</strong>の配置が必須で、これがないと指定を受けられません。児発管になるには実務経験に加えて基礎研修・実践研修の修了が必要で、資格を満たす人材は限られています。多くの事業者が最初につまずくポイントなので、<strong>物件探しと同時か、それより前に採用活動を始める</strong>ことをおすすめします。</div>
+          </details>
+          <details>
+            <summary>管理者や児発管は、他の職種と兼務できますか？</summary>
+            <div class="kt-faq-a">管理者は、業務に支障がない範囲で児発管や児童指導員との<strong>兼務が可能</strong>です。一方で、児発管が児童指導員として直接支援を行うこと自体は差し支えありませんが、その場合<strong>支援員の必要人数（員数）には数えられない</strong>点に注意が必要です。</div>
+          </details>
+          <details>
+            <summary>どんな物件でも開業できますか？</summary>
+            <div class="kt-faq-a">いいえ。指導訓練室などに必要な広さがあること、消防・建築基準法・用途地域のルールを満たすことが条件です。キッチンや玄関は必要面積に含まれないなど細かな決まりもあります。<strong>気に入った物件は、契約する前に必ず自治体へ相談</strong>してください。契約後に基準を満たさないと分かると、大きな損失になります。</div>
+          </details>
+          <details>
+            <summary>児童発達支援と一緒に運営（多機能型）できますか？</summary>
+            <div class="kt-faq-a">はい。未就学児向けの「児童発達支援」と就学児向けの「放課後等デイサービス」を、<strong>1つの事業所で午前・午後に分けて行う「多機能型」</strong>という形態があります。人員や設備を共有できるメリットがありますが、動線や定員の考え方など確認事項があるため、事前に自治体と相談しましょう。</div>
+          </details>
         </div>
       </div>
     </div>
 
-    <!-- サブサービス2件 -->
-    <div class="services-sub">
-      <div class="service-sub-card reveal">
-        <h3>変更申請・変更届</h3>
-        <p class="service-tagline">事業所運営に伴う各種変更手続き</p>
-        <p>事業所の所在地変更、人員配置の変更、定款変更、管理者・サービス管理責任者の変更など、運営に伴って発生する各種変更手続きを代行します。提出期限を踏まえ、計画的に対応します。</p>
+    <!-- 就労継続支援 A型/B型 比較 -->
+    <div class="section-header reveal" style="margin-top:20px;">
+      <h2 class="section-title" style="font-size:26px;">就労継続支援 A型・B型のちがい</h2>
+      <span class="section-decoration"></span>
+      <p class="section-subtitle">どちらも「働くことを支える」サービス。最大の違いは<strong style="color:var(--kt-green);">「雇用契約を結ぶかどうか」</strong>です。</p>
+    </div>
+
+    <div class="kt-compare-wrap reveal">
+      <table class="kt-compare">
+        <thead>
+          <tr>
+            <th class="kt-th-item">項目</th>
+            <th class="kt-th-a">就労継続支援 A型</th>
+            <th class="kt-th-b">就労継続支援 B型</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>雇用契約</th>
+            <td><strong>結ぶ</strong>（労働者として働く）</td>
+            <td>結ばない</td>
+          </tr>
+          <tr>
+            <th>支払われるお金</th>
+            <td>賃金（<strong>最低賃金以上を保障</strong>）</td>
+            <td>工賃（成果に応じた報酬。最低賃金の保障なし）</td>
+          </tr>
+          <tr>
+            <th>主な対象</th>
+            <td>原則18〜65歳未満で、支援があれば<strong>継続的に働ける</strong>方</td>
+            <td>年齢制限なし。体調等で雇用契約による就労が難しい方</td>
+          </tr>
+          <tr>
+            <th>定員</th>
+            <td>原則 <strong>10名以上</strong></td>
+            <td>原則 <strong>20名以上</strong></td>
+          </tr>
+          <tr>
+            <th>必須の人員</th>
+            <td colspan="2" style="text-align:center;">管理者／サービス管理責任者（サビ管）／職業指導員・生活支援員（合わせて利用者10名に1名以上、各1名以上・うち1名以上常勤）</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- A型 詳細 -->
+    <div class="kt-svc reveal">
+      <div class="kt-svc-head">
+        <span class="kt-svc-badge">障害福祉サービス</span>
+        <h3>就労継続支援A型</h3>
+        <span class="kt-svc-law">根拠法：障害者総合支援法</span>
       </div>
-      <div class="service-sub-card reveal">
-        <h3>年間運営サポート<br>（顧問契約）</h3>
-        <p class="service-tagline">継続的なパートナーとして事業を支える</p>
-        <p>単発の手続き代行ではなく、年間契約により事業運営全般を継続的にサポートします。</p>
-        <ul>
-          <li>加算・減算の届出（随時）</li>
-          <li>変更届の作成・提出</li>
-          <li>報酬改定への対応</li>
-          <li>監査・実地指導への備え</li>
-          <li>制度改正情報の提供</li>
-          <li>日常的なご相談への対応</li>
-        </ul>
+      <div class="kt-svc-body">
+        <p class="kt-svc-intro">
+          障害のある方と<strong>雇用契約を結び</strong>、最低賃金以上の賃金を支払いながら働く場を提供するサービスです。「支援は必要だけれど、契約を結んで安定的に働きたい」という方が対象。事業者は、利用者に取り組んでもらう<strong>仕事（生産活動）を用意する</strong>必要があります。
+        </p>
+        <div class="kt-faq">
+          <details>
+            <summary>利用者にどんな仕事をしてもらえばいい？</summary>
+            <div class="kt-faq-a">自社の事業を行ってもらう方法と、他社から作業を受託する方法があります。軽作業（部品組立・検品・袋詰め）、清掃、飲食、PC作業などさまざまです。A型は<strong>雇用契約＝最低賃金以上の支払い</strong>が前提のため、賃金をまかなえるだけの<strong>安定した売上を生む仕事の確保</strong>が事業の生命線になります。</div>
+          </details>
+          <details>
+            <summary>令和6年度の報酬改定で、何が変わったの？</summary>
+            <div class="kt-faq-a">A型の基本報酬は「スコア方式」で評価され、令和6年度改定では<strong>労働時間・生産活動・経営改善計画</strong>など複数の観点（合計200点満点）で採点される仕組みが強化されました。生産活動の収支が弱いと評価が下がりやすく、より<strong>「きちんと働き、収益を生む」事業運営</strong>が求められる方向になっています。開業前の事業計画づくりがこれまで以上に大切です。</div>
+          </details>
+          <details>
+            <summary>A型とB型、どちらで始めるべき？</summary>
+            <div class="kt-faq-a">一概には言えません。A型は最低賃金の支払い義務があり<strong>人件費の負担が重い</strong>反面、しっかり働ける利用者と安定した仕事があれば収益化しやすい形態です。B型は雇用契約がなく<strong>始めやすい</strong>一方、定員が20名以上と大きめです。想定する利用者像・用意できる仕事・資金力から総合的に判断しましょう。迷う場合はご相談ください。</div>
+          </details>
+        </div>
+      </div>
+    </div>
+
+    <!-- B型 詳細 -->
+    <div class="kt-svc reveal">
+      <div class="kt-svc-head kt-head-deep">
+        <span class="kt-svc-badge">障害福祉サービス</span>
+        <h3>就労継続支援B型</h3>
+        <span class="kt-svc-law">根拠法：障害者総合支援法</span>
+      </div>
+      <div class="kt-svc-body">
+        <p class="kt-svc-intro">
+          雇用契約を結ばずに、自分のペースで生産活動に取り組み、成果に応じた<strong>「工賃」</strong>を受け取るサービスです。年齢や体調の面で雇用契約による就労が難しい方の、居場所と社会参加の場になります。A型より始めやすい一方、定員が大きく、工賃を生む活動の工夫が求められます。
+        </p>
+        <div class="kt-facts" style="margin-bottom:24px;">
+          <div class="kt-fact">
+            <div class="kt-fact-label">対象</div>
+            <div class="kt-fact-value">年齢制限なし。就労経験がある方や、50歳以上・障害基礎年金1級の方、アセスメントで妥当と判断された方など</div>
+          </div>
+          <div class="kt-fact">
+            <div class="kt-fact-label">定員</div>
+            <div class="kt-fact-value">原則 20名以上</div>
+          </div>
+        </div>
+        <div class="kt-faq">
+          <details>
+            <summary>「工賃」はどのくらい支払うの？</summary>
+            <div class="kt-faq-a">工賃は生産活動で得た利益の中から支払われる成果報酬で、雇用契約ではないため<strong>最低賃金の保障はありません</strong>。全国の平均工賃は月額で数千円〜2万円弱程度とされ、事業所ごとに差があります。国は工賃の向上を促しており、<strong>平均工賃額に応じて報酬が変わる仕組み</strong>もあるため、利用者が達成感を持って取り組める活動づくりが重要です。</div>
+          </details>
+          <details>
+            <summary>特別支援学校を卒業した子が、そのままB型を利用できますか？</summary>
+            <div class="kt-faq-a">原則として、<strong>特別支援学校卒業後にそのままB型を利用することはできません</strong>。就労経験があること等の要件があり、就労移行支援などの<strong>アセスメント</strong>を経て利用が妥当と判断される必要があります。対象要件は自治体によって運用が異なる場合があるため、事前に確認しましょう。</div>
+          </details>
+          <details>
+            <summary>A型とB型を同じ場所で両方やれますか？</summary>
+            <div class="kt-faq-a">就労移行支援・A型・B型などを組み合わせた<strong>「多機能型」</strong>という運営形態があります。人員や設備を共有できる利点がありますが、それぞれのサービスの定員・人員配置の考え方が組み合わさるため、設計は少し複雑になります。多機能型を検討する場合は、早い段階で専門家に相談すると安心です。</div>
+          </details>
+        </div>
       </div>
     </div>
 
   </div>
 </section>
 
-<!-- ========== Pricing ========== -->
-<section class="section" id="pricing">
+<!-- ========== FAQ / 全体のよくある質問 ========== -->
+<section class="section kt-anchor-fix" id="faq">
   <div class="container">
     <div class="section-header reveal">
-      <div class="section-tag">PRICING</div>
-      <h2 class="section-title">料金プラン</h2>
+      <div class="section-tag">FAQ</div>
+      <h2 class="section-title">開業全般のよくある質問</h2>
       <span class="section-decoration"></span>
-      <p class="section-subtitle">事業者様に安心してご利用いただけるよう、リーズナブルな料金設定としています。</p>
+      <p class="section-subtitle">サービス種別を問わず、これから始める方から多く寄せられる疑問をまとめました。</p>
     </div>
 
-    <div class="pricing-grid">
-      <div class="pricing-card featured reveal">
-        <div class="pricing-name">新規指定申請<br>サポート</div>
-        <div class="pricing-amount">
-          <span class="pricing-amount-num">250,000</span><span class="pricing-amount-unit">円〜</span>
-          <span class="pricing-amount-suffix">税別 ／ 一件あたり</span>
-        </div>
-        <p class="pricing-desc">事業計画の整理から指定申請書類の作成・提出、自治体との事前相談まで、新規参入の全工程をサポート。</p>
-        <ul class="pricing-features">
-          <li>事業計画の整理</li>
-          <li>申請書類一式作成</li>
-          <li>自治体との事前相談</li>
-          <li>指定後の運営サポート</li>
-        </ul>
-      </div>
-      <div class="pricing-card reveal">
-        <div class="pricing-name">変更申請・<br>変更届</div>
-        <div class="pricing-amount">
-          <span class="pricing-amount-num">30,000</span><span class="pricing-amount-unit">円〜</span>
-          <span class="pricing-amount-suffix">税別 ／ 一件あたり</span>
-        </div>
-        <p class="pricing-desc">所在地変更、人員変更、定款変更などの各種変更手続きに対応します。</p>
-        <ul class="pricing-features">
-          <li>事業所所在地変更</li>
-          <li>人員配置変更</li>
-          <li>管理者・サビ菅の変更</li>
-          <li>定款変更</li>
-        </ul>
-      </div>
-      <div class="pricing-card reveal">
-        <div class="pricing-name">年間運営<br>サポート（顧問）</div>
-        <div class="pricing-amount">
-          <span class="pricing-amount-num">50,000</span><span class="pricing-amount-unit">円〜</span>
-          <span class="pricing-amount-suffix">税別 ／ 月額</span>
-        </div>
-        <p class="pricing-desc">加算・減算届出、変更届、制度改正対応、日常相談など、年間を通じた継続サポートをご提供。</p>
-        <ul class="pricing-features">
-          <li>加算届出への即対応</li>
-          <li>各種手続き優先対応</li>
-          <li>日常相談（メール・電話）</li>
-          <li>監査・実地指導の備え</li>
-        </ul>
-      </div>
+    <div class="kt-faq reveal">
+      <details>
+        <summary>福祉や介護の経験がなくても始められますか？</summary>
+        <div class="kt-faq-a">経営者ご自身に福祉資格は必須ではありません。ただし、<strong>サービス管理責任者・児童発達支援管理責任者や、資格を持つ支援員の配置は必須</strong>です。つまり「有資格の人材をチームに迎えられるか」が鍵になります。制度理解や書類づくりに不安があれば、専門家のサポートを受けながら進める方が多いです。</div>
+      </details>
+      <details>
+        <summary>まず何から始めればいいですか？</summary>
+        <div class="kt-faq-a">おすすめの順番は、①どのサービスを行うか決める → ②法人の準備 → ③事業・資金計画 → ④物件と人材を並行して探す、です。特に<strong>「人（サビ管・児発管）」と「物件」は時間がかかる</strong>ため、方向性が固まったら早めに動き出すのがコツです。物件は契約前の自治体相談を忘れずに。</div>
+      </details>
+      <details>
+        <summary>法人はどの種類がよいですか？</summary>
+        <div class="kt-faq-a">株式会社・合同会社（営利法人）のほか、一般社団法人・NPO法人・社会福祉法人（非営利法人）などが選べます。大きな違いは、<strong>設立のしやすさ・費用</strong>と、<strong>営利／非営利という性格</strong>、そして<strong>社会的信用や税制</strong>です。スピード重視なら株式会社・合同会社、公益性や信用を重視するならNPO法人・社会福祉法人が候補になりますが、社会福祉法人は設立のハードルが高い点に注意が必要です。いずれの場合も<strong>定款の「事業目的」に該当事業の記載</strong>が必須です。種類ごとの詳しい比較は、上の<a href="#requirements" style="color:var(--kt-green);font-weight:600;">「開業の要件」</a>にある表をご覧ください。</div>
+      </details>
+      <details>
+        <summary>指定申請には、どのくらいの期間がかかりますか？</summary>
+        <div class="kt-faq-a">自治体との事前協議・書類準備を含めると、申請そのものだけでも<strong>数か月</strong>を見込みます。多くの自治体で「開業希望月の前月●日締切」などのルールがあり、指定は<strong>原則毎月1日付</strong>で行われます。書類の不備や工事の遅れがあるとさらにずれ込むため、スケジュールには余裕を持たせましょう。</div>
+      </details>
+      <details>
+        <summary>自分で申請する場合と、専門家に頼む場合の違いは？</summary>
+        <div class="kt-faq-a">ご自身で申請することも可能です。ただし提出書類が非常に多く、自治体ごとに様式や運用が異なり、人員・設備の要件解釈にも判断が必要です。専門家に依頼すると、<strong>本業の準備（採用・物件・仕事づくり）に集中でき、要件の取りこぼしや手戻りを防ぎやすくなる</strong>のが利点です。費用と手間のバランスで選ばれると良いでしょう。</div>
+      </details>
+      <details>
+        <summary>開業したあとも、手続きは続きますか？</summary>
+        <div class="kt-faq-a">はい。人員の入退職や体制変更のたびの<strong>変更届</strong>、要件を満たしたときの<strong>加算の届出</strong>、数年ごとの<strong>報酬改定への対応</strong>、そして<strong>運営指導（実地指導）への備え</strong>など、運営フェーズでも継続的に事務が発生します。届出のタイミングを逃すと本来得られる報酬を取りこぼすこともあるため、開業後の運営体制づくりも大切です。</div>
+      </details>
     </div>
 
-    <div class="pricing-notes reveal">
-      <p>※ 表示価格は税別の目安です。詳細はお見積もりにてご案内いたします。</p>
-      <p>※ 実費（自治体への手数料、郵送費等）は別途ご負担いただきます。</p>
-      <p>※ 事業種別・自治体・事業所規模により料金は変動いたします。</p>
-      <p>※ <strong style="color: var(--color-primary-dark);">初回相談・お見積もりは無料</strong>です。お気軽にご連絡ください。</p>
-    </div>
-  </div>
-</section>
-
-<!-- ========== Flow ========== -->
-<section class="section section-alt" id="flow">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-tag">FLOW</div>
-      <h2 class="section-title">ご依頼の流れ</h2>
-      <span class="section-decoration"></span>
-      <p class="section-subtitle">初めての方も、安心してご相談いただけるよう、丁寧に進めてまいります。</p>
-    </div>
-
-    <div class="flow-steps">
-      <div class="flow-step reveal">
-        <div class="flow-step-number">
-          <span class="flow-step-number-label">STEP</span>
-          <span class="flow-step-number-num">01</span>
-        </div>
-        <div class="flow-step-content">
-          <h3>お問い合わせ</h3>
-          <p>お電話またはメールにて、まずはお気軽にご連絡ください。ご相談内容の概要をお伺いし、面談日程を調整いたします。</p>
-        </div>
-      </div>
-      <div class="flow-step reveal">
-        <div class="flow-step-number">
-          <span class="flow-step-number-label">STEP</span>
-          <span class="flow-step-number-num">02</span>
-        </div>
-        <div class="flow-step-content">
-          <h3>初回相談（無料）</h3>
-          <p>事業計画や現状の課題、ご要望をじっくりとお伺いします。ご相談内容に応じて、必要な手続きや見込み期間、概算費用をご説明します。対面・オンラインのいずれにも対応可能です。</p>
-        </div>
-      </div>
-      <div class="flow-step reveal">
-        <div class="flow-step-number">
-          <span class="flow-step-number-label">STEP</span>
-          <span class="flow-step-number-num">03</span>
-        </div>
-        <div class="flow-step-content">
-          <h3>お見積もり・ご提案</h3>
-          <p>ご相談内容を踏まえ、業務範囲・スケジュール・料金を明記したお見積もりをご提示します。内容をご確認いただき、ご納得いただけた段階で次のステップに進みます。</p>
-        </div>
-      </div>
-      <div class="flow-step reveal">
-        <div class="flow-step-number">
-          <span class="flow-step-number-label">STEP</span>
-          <span class="flow-step-number-num">04</span>
-        </div>
-        <div class="flow-step-content">
-          <h3>ご契約</h3>
-          <p>業務内容にご同意いただきましたら、業務委託契約を締結いたします。契約書には業務範囲・料金・期間を明記し、双方の認識を揃えた上で業務を開始します。</p>
-        </div>
-      </div>
-      <div class="flow-step reveal">
-        <div class="flow-step-number">
-          <span class="flow-step-number-label">STEP</span>
-          <span class="flow-step-number-num">05</span>
-        </div>
-        <div class="flow-step-content">
-          <h3>業務遂行</h3>
-          <p>書類作成、自治体との調整、申請手続きを進めてまいります。進捗状況は随時ご報告し、ご不明点にはその都度お答えします。</p>
-        </div>
-      </div>
-      <div class="flow-step reveal">
-        <div class="flow-step-number">
-          <span class="flow-step-number-label">STEP</span>
-          <span class="flow-step-number-num">06</span>
-        </div>
-        <div class="flow-step-content">
-          <h3>完了・アフターサポート</h3>
-          <p>申請が完了し、指定通知書等を受領いただきましたら業務完了となります。顧問契約をご希望の場合は、引き続き継続的なサポートをご提供します。</p>
-        </div>
-      </div>
+    <!-- 事業者向けサポート案内 -->
+    <div class="kt-help reveal">
+      <h3>申請手続きに不安があるときは</h3>
+      <p>
+        ここでご紹介したのは、あくまで一般的な概要です。実際の要件は、選ぶサービス・物件・地域・タイミングによって変わり、指定申請の書類も多岐にわたります。<br>
+        風のテラス行政書士事務所は、<strong style="color:var(--kt-green);">名古屋市・愛知県</strong>を中心に、指定申請などの手続きサポートや開業後の運営支援を行っています。書類の準備や申請手続きにご不安がある場合には、当事務所までお気軽にご相談ください（初回のご相談は無料です）。
+      </p>
+      <a href="#contact" class="btn btn-primary">当事務所に相談する →</a>
     </div>
   </div>
 </section>
 
 <!-- ========== Profile ========== -->
-<section class="section" id="profile">
+<section class="section section-alt kt-anchor-fix" id="profile">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag">PROFILE</div>
       <h2 class="section-title">行政書士紹介</h2>
       <span class="section-decoration"></span>
-      <p class="section-subtitle">代表行政書士のプロフィールをご紹介します。</p>
+      <p class="section-subtitle">このページを監修している、代表行政書士のプロフィールです。</p>
     </div>
 
     <div class="profile-wrap">
@@ -446,9 +1041,8 @@
       <div class="profile-body reveal">
         <div class="profile-section">
           <h3>ご挨拶</h3>
-         
-          <p>事業者様が日々の業務により専念することができるよう、行政手続きや書類作成のサポートをいたします。</p>
-          <p>「困ったときに、いつでも寄り添える身近な存在でありたい」——そんな事務所を目指しています。</p>
+          <p>「障害福祉の事業を始めたいけれど、制度が難しくて何から手をつければいいか分からない」——そんな声によくお応えしています。</p>
+          <p>複雑な手続きをかみ砕いてご説明し、事業者様が<strong style="color:var(--kt-green);">本来の支援</strong>に専念できるようサポートいたします。「困ったときに、いつでも寄り添える身近な存在でありたい」——そんな事務所を目指しています。</p>
         </div>
 
         <div class="profile-section">
@@ -474,7 +1068,7 @@
 </section>
 
 <!-- ========== Office ========== -->
-<section class="section section-alt" id="office">
+<section class="section kt-anchor-fix" id="office">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag">OFFICE</div>
@@ -519,7 +1113,7 @@
           </tr>
           <tr>
             <th>主な取扱業務</th>
-            <td>障害福祉サービス事業全般</td>
+            <td>障害福祉サービス事業全般（開業サポート・指定申請・運営支援）</td>
           </tr>
         </tbody>
       </table>
@@ -533,13 +1127,13 @@
 </section>
 
 <!-- ========== Contact ========== -->
-<section class="section contact" id="contact">
+<section class="section contact kt-anchor-fix" id="contact">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag">CONTACT</div>
-      <h2 class="section-title">お問い合わせ</h2>
+      <h2 class="section-title">申請手続きに不安があれば</h2>
       <span class="section-decoration"></span>
-      <p class="section-subtitle">初回相談は無料です。お電話・メールにてお気軽にご連絡ください。</p>
+      <p class="section-subtitle">指定申請などの手続きにご不安がある場合は、名古屋市・愛知県対応の当事務所までお気軽にご相談ください。お電話・メールで承ります。</p>
     </div>
 
     <div class="contact-methods">
@@ -574,11 +1168,12 @@
         <h4>サイトメニュー</h4>
         <ul>
           <li><a href="https://www.kazenoterrace-office.com/">公式サイトへ ↗</a></li>
-          <li><a href="#concerns">お悩み</a></li>
-          <li><a href="#strengths">当事務所の強み</a></li>
-          <li><a href="#services">サービス内容</a></li>
-          <li><a href="#pricing">料金プラン</a></li>
-          <li><a href="#flow">ご依頼の流れ</a></li>
+          <li><a href="#about">事業の全体像</a></li>
+          <li><a href="#requirements">開業の要件</a></li>
+          <li><a href="#flow">開業の流れ</a></li>
+          <li><a href="#money">お金の話</a></li>
+          <li><a href="#services">サービス種別</a></li>
+          <li><a href="#faq">よくある質問</a></li>
           <li><a href="#profile">行政書士紹介</a></li>
           <li><a href="#office">事務所概要</a></li>
           <li><a href="#contact">お問い合わせ</a></li>
